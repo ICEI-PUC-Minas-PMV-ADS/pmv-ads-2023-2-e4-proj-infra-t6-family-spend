@@ -4,23 +4,78 @@
 
 Definição do problema e ideia de solução a partir da perspectiva do usuário. É composta pela definição do  diagrama de personas, histórias de usuários, requisitos funcionais e não funcionais além das restrições do projeto.
 
-Apresente uma visão geral do que será abordado nesta parte do documento, enumerando as técnicas e/ou ferramentas utilizadas para realizar a especificações do projeto
-
 ## Personas
+As personas selecionadas durante o nosso debate acerca do tema escolhido pelo nosso grupo estão representadas a seguir com suas devidas características apresentadas:
 
-Pedro Paulo tem 26 anos, é arquiteto recém-formado e autônomo. Pensa em se desenvolver profissionalmente através de um mestrado fora do país, pois adora viajar, é solteiro e sempre quis fazer um intercâmbio. Está buscando uma agência que o ajude a encontrar universidades na Europa que aceitem alunos estrangeiros.
+Quadro Personas — 1
+ 	Rafaela Alves Guimarães
+•	Idade: 30
+•	Ocupação: Empreendedora, dona de uma startup de sucesso que atua na área de crowdfunding, mãe de 3 filhos 
+•	Gênero: Feminino
+•	Estado Civil: Solteira	Aplicativos
+•	Instagram
+•	Linkedin
+  Motivações
+•	Devido a vida corrida pelos compromissos de trabalho, sempre deixa para depois a gestão financeira da familia.
+•	Precisa de algo externo que a ajude realizar o controle financeiro, podendo dividir essa responsabilidade com os filhos.	      
+  Frustrações:
+•	Ocorreu o desconforto de dever um valor maior que seus proventos	História
+•	tem uma rotina cansativa de trabalho e o tempo que sobra ela investe nos filhos, não conseguindo se organizar financeiramente.
 
-Enumere e detalhe as personas da sua solução. Para tanto, baseie-se tanto nos documentos disponibilizados na disciplina e/ou nos seguintes links:
+Quadro Personas — 2
 
-> **Links Úteis**:
-> - [Rock Content](https://rockcontent.com/blog/personas/)
-> - [Hotmart](https://blog.hotmart.com/pt-br/como-criar-persona-negocio/)
-> - [O que é persona?](https://resultadosdigitais.com.br/blog/persona-o-que-e/)
-> - [Persona x Público-alvo](https://flammo.com.br/blog/persona-e-publico-alvo-qual-a-diferenca/)
-> - [Mapa de Empatia](https://resultadosdigitais.com.br/blog/mapa-da-empatia/)
-> - [Mapa de Stalkeholders](https://www.racecomunicacao.com.br/blog/como-fazer-o-mapeamento-de-stakeholders/)
->
-Lembre-se que você deve ser enumerar e descrever precisamente e personalizada todos os clientes ideais que sua solução almeja.
+  Fernando Almeida
+•	Idade: 26
+•	Ocupação:  Estudante de Engenharia de Software, estagiário de uma empresa que atua na criação de games. 
+•	Gênero: Masculino
+•	Estado Civil: Solteiro
+	 Aplicativos:
+•	Facebook
+•	Linkedin
+•	Instagram
+  Motivações
+•	Mindset voltado para automatização de processos em detrimento de processos manuais e demorados.
+•	Já possui contato direto com a área da tecnologia e acredita que ela seja uma facilitadora de diversas situações na vida dos indivíduos.
+	 Frustrações
+•	Atrasou a mensalidade da faculdade.
+	 História
+•	É uma pessoa extremamente criativa e prática. Gostaria que cada vez mais a tecnologia fosse utilizada no dia-a-dia com o intuito, principalmente, de democratizar, disponibilizar informações e acelerar processos a partir de soluções inteligentes.
+
+
+Quadro Personas — 3
+ 
+  Luiz Gonçalves
+•	Idade: 43
+•	Ocupação: Garçom 
+•	Gênero: Masculino
+•	Estado Civil: Casado
+ 	Aplicativos:
+•	Facebook
+•	Instagram
+  Motivações
+•	Tem contato com vários tipos de pessoas, de diversos lugares diferentes e conversa sobre vários temas distintos.	Frustrações
+•	Não consegue economizar para comprar a casa própria.
+  História
+•	Trabalha como garçom há mais de 10 anos com um bom salário, mas não consegue poupar.
+
+
+Quadro Personas — 4
+
+  Marisa Bastos
+•	Idade: 56
+•	Ocupação: Coach
+•	Gênero: Feminino
+•	Estado Civil: Divorciada
+  Aplicativos
+•	Instagram
+•	Facebook
+  Motivações
+•	Maior retorno financeiro.
+•	Por em pratica o que é ensinado por ela.	Frustrações:
+•	Sabe em detalhes como se faz para controlar as finanças, mas não consegue executar	História
+•	Administra sua agência sempre prezando por alternativas atrativas  e facilitadoras para seus clientes. 
+Fonte: Autoria do grupo (2023)
+
 
 ## Histórias de Usuários
 
@@ -28,17 +83,11 @@ Com base na análise das personas forma identificadas as seguintes histórias de
 
 |EU COMO... `PERSONA`| QUERO/PRECISO ... `FUNCIONALIDADE` |PARA ... `MOTIVO/VALOR`                 |
 |--------------------|------------------------------------|----------------------------------------|
-|Usuário do sistema  | Registrar minhas tarefas           | Não esquecer de fazê-las               |
-|Administrador       | Alterar permissões                 | Permitir que possam administrar contas |
+|Rafaela Alves   | Um site que possibilite fazer controle financeiro de forma rápida, automática e simples.| Organizar as finanças|
+|Fernando Almeida    | Uma aplicação que me avise quando o meu consumo financeiro esteja próximo de acabar| Permitir que possam administrar contas |
+|Marisa Bastos       | Alguma tecnologia que me permita a colocar em pratica meu conhecimento financeiro| Ferramenta para trabalho|
+|Luiz Gonçalves      | Um aplicativo que calcule uma porcentagem dos meus ganhos, para ser direcionado para poupanças                 | Economizar |
 
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
 
 ## Modelagem do Processo de Negócio 
 
@@ -79,30 +128,31 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 |ID    | Descrição do Requisito  | Prioridade |
 |------|-----------------------------------------|----|
-|RF-001| Permitir que o usuário cadastre tarefas | ALTA | 
-|RF-002| Emitir um relatório de tarefas no mês   | MÉDIA |
+|RF-001| A aplicação deve conter uma página inicial com informações sobre os principais objetivos e propostas para os usuários.  | ALTA | 
+|RF-002| A aplicação deve conter uma página de cadastro dos usuários e suas principais características.   | ALTA |
+|RF-003| A aplicação deve conter uma página de Login para os usuários acessarem de forma instantânea | ALTA | 
+|RF-004| A aplicação deve contar uma página de suporte aos usuários. | ALTA | 
+|RF-005| A aplicação deve conter uma página “sobre” com as principais informações e propostas para os usuários. | ALTA | 
+|RF-006| A aplicação deve apresentar a opção de atualizar e remover informações de cadastro dos usuários. | ALTA | 
+|RF-007| A aplicação deve conter uma página de criação e busca de interesses. | ALTA | 
+|RF-008| A aplicação deve conter página de contato para usuários interessados em saber mais sobre a aplicação, propor sugestões e sanar quaisquer dúvidas que venham apresentar.  | ALTA | 
+|RF-009| A aplicação deve disponibilizar ao usuário a opção de recebimento de e-mails informativos sobre interesses específicos da aplicação, dicas e outros | BAIXA | 
+|RF-010| A aplicação irá disponibilizar ao usuário a opção de se desvincular da plataforma, sendo assim, o registro de e-mail e qualquer envio automático serão desabilitados. | BAIXA | 
+|RF-011| A aplicação disponibilizará a possibilidade dos usuários realizarem cadastros de entradas e saídas financeiras. | BAIXA | 
+|RF-012| A aplicação disponibilizará a possibilidade do usuário configurar seus dados bancários, para que toda sua movimentação financeira seja preenchida de forma automática. | BAIXA | 
 
 ### Requisitos não Funcionais
 
 |ID     | Descrição do Requisito  |Prioridade |
 |-------|-------------------------|----|
-|RNF-001| O sistema deve ser responsivo para rodar em um dispositivos móvel | MÉDIA | 
-|RNF-002| Deve processar requisições do usuário em no máximo 3s |  BAIXA | 
-
-Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
-
-- [Requisitos Funcionais
- (RF)](https://pt.wikipedia.org/wiki/Requisito_funcional):
- correspondem a uma funcionalidade que deve estar presente na
-  plataforma (ex: cadastro de usuário).
-- [Requisitos Não Funcionais
-  (RNF)](https://pt.wikipedia.org/wiki/Requisito_n%C3%A3o_funcional):
-  correspondem a uma característica técnica, seja de usabilidade,
-  desempenho, confiabilidade, segurança ou outro (ex: suporte a
-  dispositivos iOS e Android).
-Lembre-se que cada requisito deve corresponder à uma e somente uma
-característica alvo da sua solução. Além disso, certifique-se de que
-todos os aspectos capturados nas Histórias de Usuário foram cobertos.
+|RNF-001| A aplicação deve ser estruturado de forma a facilitar a utilização por pessoas de quaisquer idades. | ALTA | 
+|RNF-002| A aplicação deve conter tags auxiliares em quaisquer imagens, vídeos e componentes visuais, a fim de permitir a utilização de leitores para pessoas com baixa visão. |  ALTA |
+|RNF-003| A aplicação deverá estar apta a funcionar em qualquer dispositivo, utilizando técnicas de responsividade. |  ALTA | 
+|RNF-004| As informações de cadastro dos usuários deverão ser armazenadas para fins de segurança.  |  ALTA | 
+|RNF-005| Deverá ser implementado um sistema de verificação de autenticidade para os usuários.  |  ALTA | 
+|RNF-006| A aplicação será visualmente leve e evitar cores muito contrastantes para um maior conforto do usuário. |  MÉDIA | 
+|RNF-007| A aplicação irá utilizar de cache no navegador para facilitar o retorno do usuário a etapas anteriores a que se encontravam |  BAIXA | 
+|RNF-008| A aplicação deverá realizar comunicações via API com as instituições bancárias |  MÉDIA | 
 
 ## Restrições
 
@@ -110,8 +160,10 @@ O projeto está restrito pelos itens apresentados na tabela a seguir.
 
 |ID| Restrição                                             |
 |--|-------------------------------------------------------|
-|01| O projeto deverá ser entregue até o final do semestre |
-|02| Não pode ser desenvolvido um módulo de backend        |
+|01|  O projeto deverá ser entregue no final do semestre letivo, não podendo extrapolar a data de 11/12/2023. |
+|02|  O aplicativo deve restringir aplicações de frontend e backend. |
+|03|  O projeto deve ser realizado pela equipe e não terceirizado por outros membros fora da instituição  |
+|04|  O projeto deve seguir normas de privacidade da web e mostrar termos de política de privacidade e uso da ferramenta  |
 
 Enumere as restrições à sua solução. Lembre-se de que as restrições geralmente limitam a solução candidata.
 
@@ -121,16 +173,7 @@ Enumere as restrições à sua solução. Lembre-se de que as restrições geral
 
 ## Diagrama de Casos de Uso
 
-O diagrama de casos de uso é o próximo passo após a elicitação de requisitos, que utiliza um modelo gráfico e uma tabela com as descrições sucintas dos casos de uso e dos atores. Ele contempla a fronteira do sistema e o detalhamento dos requisitos funcionais com a indicação dos atores, casos de uso e seus relacionamentos. 
-
-As referências abaixo irão auxiliá-lo na geração do artefato “Diagrama de Casos de Uso”.
-
-> **Links Úteis**:
-> - [Criando Casos de Uso](https://www.ibm.com/docs/pt-br/elm/6.0?topic=requirements-creating-use-cases)
-> - [Como Criar Diagrama de Caso de Uso: Tutorial Passo a Passo](https://gitmind.com/pt/fazer-diagrama-de-caso-uso.html/)
-> - [Lucidchart](https://www.lucidchart.com/)
-> - [Astah](https://astah.net/)
-> - [Diagrams](https://app.diagrams.net/)
+![Casos de uso (1)](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-proj-infra-t6-family-spend/assets/103543979/14dec86d-09ad-4024-b90d-d0aadcc17fa6)
 
 # Matriz de Rastreabilidade
 
@@ -138,27 +181,24 @@ A matriz de rastreabilidade é uma ferramenta usada para facilitar a visualizaç
 
 A matriz deve contemplar todos os elementos relevantes que fazem parte do sistema, conforme a figura meramente ilustrativa apresentada a seguir.
 
-![Exemplo de matriz de rastreabilidade](img/02-matriz-rastreabilidade.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-proj-infra-t6-family-spend/assets/103543979/2a9a48da-b5b0-4224-814b-566a57103d82)
 
-> **Links Úteis**:
-> - [Artigo Engenharia de Software 13 - Rastreabilidade](https://www.devmedia.com.br/artigo-engenharia-de-software-13-rastreabilidade/12822/)
-> - [Verificação da rastreabilidade de requisitos usando a integração do IBM Rational RequisitePro e do IBM ClearQuest Test Manager](https://developer.ibm.com/br/tutorials/requirementstraceabilityverificationusingrrpandcctm/)
-> - [IBM Engineering Lifecycle Optimization – Publishing](https://www.ibm.com/br-pt/products/engineering-lifecycle-optimization/publishing/)
 
 
 # Gerenciamento de Projeto
 
-De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
+De acordo com o PMBoK v6 as dez áreas que constituem os pilares para gerenciar projetos, e que caracterizam a multidisciplinaridade
+envolvida, são: Integração, Escopo, Cronograma (Tempo), Custos, Qualidade, Recursos, Comunicações, Riscos, Aquisições, Partes Interessadas. Para desenvolver projetos um profissional deve se preocupar em gerenciar todas essas dez áreas. Elas se complementam e se relacionam, de tal forma que não se deve apenas examinar uma área de forma estanque. É preciso considerar, por exemplo, que as áreas de Escopo, Cronograma e Custos estão muito relacionadas. Assim, se eu amplio o escopo de um projeto eu posso afetar seu cronograma e seus custos.
 
 ## Gerenciamento de Tempo
 
 Com diagramas bem organizados que permitem gerenciar o tempo nos projetos, o gerente de projetos agenda e coordena tarefas dentro de um projeto para estimar o tempo necessário de conclusão.
 
-![Diagrama de rede simplificado notação francesa (método francês)](img/02-diagrama-rede-simplificado.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-proj-infra-t6-family-spend/assets/103543979/3964cd02-9ee5-4878-8262-1b443167c310)
 
 O gráfico de Gantt ou diagrama de Gantt também é uma ferramenta visual utilizada para controlar e gerenciar o cronograma de atividades de um projeto. Com ele, é possível listar tudo que precisa ser feito para colocar o projeto em prática, dividir em atividades e estimar o tempo necessário para executá-las.
 
-![Gráfico de Gantt](img/02-grafico-gantt.png)
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-proj-infra-t6-family-spend/assets/103543979/f9a30c34-24db-411f-bf6d-0a21e29f80df)
 
 ## Gerenciamento de Equipe
 
