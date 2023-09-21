@@ -1,23 +1,25 @@
-# TÍTULO DO PROJETO
+# Family Spend
 
-`CURSO`
+`Análise e desenvolvimento de sistemas`
 
-`DISCIPLINA`
+`Desenvolvimento de uma aplicação distribuida`
 
-`SEMESTRE`
+`4° Semestre`
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+A gestão financeira é fundamental para o bem-estar de qualquer família. No entanto, muitas vezes, a falta de ferramentas adequadas dificulta o controle de gastos e a economia de recursos. Neste contexto, este trabalho tem como objetivo principal o desenvolvimento de um sistema de controle financeiro destinado a famílias. Essa solução visa capacitar cada membro da família a registrar seus gastos, além de fornecer informações essenciais, como o montante total de despesas no mês, sugestões de economia, comparativos semanais e mensais, comparativos entre cada usuário, comparativos entre categorias de serviço/produto, dentre outras.
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
+* Ana Carolina do Carmo Vaz
+* Arthur Hualde Ribeiro
+* Diego Alberto Sobrinho
+* Gabriel Martins Xavier
+* Gabriel Miranda Cangussu
+* Ian Amaral Barbos Almeida
 
 ## Orientador
 
-* Nome completo do professor 1
+* Pedro Felipe Alves de Oliveira
 
 ## Instruções de utilização
 
