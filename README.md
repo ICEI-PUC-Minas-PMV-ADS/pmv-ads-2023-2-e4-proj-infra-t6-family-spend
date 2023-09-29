@@ -15,7 +15,7 @@ A gestão financeira é fundamental para o bem-estar de qualquer família. No en
 * Diego Alberto Sobrinho
 * Gabriel Martins Xavier
 * Gabriel Miranda Cangussu
-* Ian Amaral Barbos Almeida
+* Ian Amaral Barbosa Moreira
 
 ## Orientador
 
