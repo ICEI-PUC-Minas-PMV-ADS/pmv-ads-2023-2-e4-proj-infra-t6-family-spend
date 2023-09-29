@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Microsoft Visual Studio\\2022\\Sources\\Family Spend\\Family Spend.csproj": {}
+    "C:\\Users\\Gabriel\\source\\repos\\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\\src\\Family Spend\\Family Spend.csproj": {}
   },
   "projects": {
-    "D:\\Microsoft Visual Studio\\2022\\Sources\\Family Spend\\Family Spend.csproj": {
+    "C:\\Users\\Gabriel\\source\\repos\\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\\src\\Family Spend\\Family Spend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Microsoft Visual Studio\\2022\\Sources\\Family Spend\\Family Spend.csproj",
+        "projectUniqueName": "C:\\Users\\Gabriel\\source\\repos\\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\\src\\Family Spend\\Family Spend.csproj",
         "projectName": "Family Spend",
-        "projectPath": "D:\\Microsoft Visual Studio\\2022\\Sources\\Family Spend\\Family Spend.csproj",
-        "packagesPath": "C:\\Users\\gcang\\.nuget\\packages\\",
-        "outputPath": "D:\\Microsoft Visual Studio\\2022\\Sources\\Family Spend\\obj\\",
+        "projectPath": "C:\\Users\\Gabriel\\source\\repos\\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\\src\\Family Spend\\Family Spend.csproj",
+        "packagesPath": "C:\\Users\\Gabriel\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Gabriel\\source\\repos\\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\\src\\Family Spend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\gcang\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Gabriel\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

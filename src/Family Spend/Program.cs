@@ -4,9 +4,9 @@ using Family_Spend.Services;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.Configure<FamiliaDatabaseSettings>(builder.Configuration.GetSection("DevNetStoreDatabase"));
+builder.Services.Configure<FamilySpendDatabaseSettings>(builder.Configuration.GetSection("FamilySpendDatabase"));
 
-builder.Services.AddSingleton<FamiliaService>();
+builder.Services.AddSingleton<FamiliasService>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

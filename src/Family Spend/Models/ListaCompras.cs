@@ -9,6 +9,9 @@ namespace Family_Spend.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }
 
+        [BsonElement] 
+        public string? IdFamilia { get; set;}
+
         [BsonElement("Nome")]
         public string Nome { get; set; } = null;
 

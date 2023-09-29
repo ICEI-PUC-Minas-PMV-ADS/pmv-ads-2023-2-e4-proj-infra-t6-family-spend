@@ -7,7 +7,7 @@ namespace Family_Spend.Models
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
-        public string? Id { get; set; }
+        public string? IdListaCompras { get; set; }
 
         [BsonElement("Nome")]
         public string Nome { get; set; } = null;

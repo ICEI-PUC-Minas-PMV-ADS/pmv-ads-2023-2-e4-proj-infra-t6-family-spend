@@ -10,7 +10,10 @@ namespace Family_Spend.Models
         public string? Id { get; set; }
 
         [BsonElement("Nome")]
-        public string Nome { get; set; } = null;
+        public string NomeFamilia { get; set; } = null;
+
+        [BsonElement("Endereco")]
+        public string Endereco { get; set; }
 
         public List<ListaCompras> ListaCompras { get; set; }
     }
