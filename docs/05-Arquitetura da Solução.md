@@ -32,8 +32,7 @@ Entregar um arquivo banco.sql contendo os scripts de criação das tabelas do ba
 - `.NET Core 7`
 - `React`
 - `React Native`
-- `MySQL`
-- `Entity Framework`
+- `MongoDB`
 
 
 ## Hospedagem
