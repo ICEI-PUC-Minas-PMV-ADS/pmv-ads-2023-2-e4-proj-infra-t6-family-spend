@@ -15,6 +15,7 @@ namespace Family_Spend.Models
         [BsonElement("Endereco")]
         public string Endereco { get; set; }
 
-        public List<ListaCompras> ListaCompras { get; set; }
+        [BsonElement("Familiar")]
+        public List<Usuario> Familiar { get; set; }
     }
 }
