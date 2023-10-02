@@ -3,12 +3,11 @@
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+O metodologia adotada será por meio da metodologia Scrum.
 
 ## Relação de Ambientes de Trabalho
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito deverá ser apresentada em uma tabela que especifica que detalha Ambiente, Plataforma e Link de Acesso. 
-Nota: Vide documento modelo do estudo de caso "Portal de Notícias" e defina também os ambientes e frameworks que serão utilizados no desenvolvimento de aplicações móveis.
+Os ambientes de trabalho se relacionaram por meio de ferramentas de controle de versão como o Github e as relações interpessoais serão usadas para definir o futuro do projeto e divisão de tarefas do grupo.
 
 ## Controle de Versão
 
@@ -50,7 +49,7 @@ A equipe utiliza metodologias ágeis, tendo escolhido o Scrum como base para def
 
 ### Processo
 
-O Processo adotado será por meio da metodologia Scrum que terá suas sprints com duração de duas semanas e reunião diárias para conhecimento do que cada um produziu.
+O Processo adotado será por meio sprints com duração de duas semanas e reunião diárias para conhecimento do que cada um produziu.
 
 ### Ferramentas
 
