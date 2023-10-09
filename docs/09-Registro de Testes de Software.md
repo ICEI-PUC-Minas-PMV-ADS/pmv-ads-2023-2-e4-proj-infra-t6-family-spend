@@ -10,3 +10,7 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 
 > **Links Úteis**:
 > - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
+>
+> - ## Teste de Inclusão de Grupo Familiar
+>
+> - ![Imagem do WhatsApp de 2023-10-08 à(s) 22 09 43_784a9ed3](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-proj-infra-t6-family-spend/assets/98751183/67e59bd1-a334-495d-93f8-b1f066c4fb2e)
