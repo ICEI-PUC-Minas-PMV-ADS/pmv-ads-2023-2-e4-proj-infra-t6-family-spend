@@ -8,11 +8,13 @@ namespace Family_Spend.Controllers
     [Route("api/[controller]")]
     public class FamiliaController : ControllerBase
     {
-        private readonly FamiliasService _familiasService;
+        private readonly IFamiliasService _familiasService;
+        private readonly IUsuariosService _usuariosService;
 
-        public FamiliaController(FamiliasService familiaService)
+        public FamiliaController(IFamiliasService familiaService, IUsuariosService usuarioService)
         {
             _familiasService = familiaService;
+            _usuariosService = usuarioService;
         }
 
         [HttpGet]
@@ -40,7 +42,7 @@ namespace Family_Spend.Controllers
                 return NotFound();
             familiaAtualizada.Id = familia.Id;
             await _familiasService.UpdateAsync(id, familiaAtualizada);
-            return NoContent();
+            return Ok("Atualizado com sucesso");
         }
 
         [HttpDelete("{id}")]
@@ -50,7 +52,7 @@ namespace Family_Spend.Controllers
             if (familia is null)
                 return NotFound();
             await _familiasService.RemoveAsync(id);
-            return NoContent();
+            return Ok("Deletado com sucesso");
         }
     }
 }

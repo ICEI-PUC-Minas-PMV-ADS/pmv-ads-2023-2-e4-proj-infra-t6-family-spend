@@ -15,5 +15,7 @@ namespace Family_Spend.Models
         public long Preco { get; set; }
 
         public string Categoria { get; set; }
+
+        public int? GastoId { get; set; }
     }
 }

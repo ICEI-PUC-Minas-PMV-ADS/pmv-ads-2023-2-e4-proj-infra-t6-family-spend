@@ -9,6 +9,10 @@ namespace Family_Spend.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }
 
+        public string FamiliaId { get; set; }
+
+        public string UsuarioId { get; set; }
+
         [BsonElement("NomeGasto")]
         public string NomeGasto { get; set; } = null;
 
@@ -17,5 +21,8 @@ namespace Family_Spend.Models
 
         [BsonElement("Data")]
         public DateTime? Data { get; set; } = null;
+
+        [BsonIgnoreIfNull]
+        public string NomeUsuario { get; set; }
     }
 }

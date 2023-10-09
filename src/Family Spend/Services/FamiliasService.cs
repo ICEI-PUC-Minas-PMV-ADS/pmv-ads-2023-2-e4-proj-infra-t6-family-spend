@@ -4,7 +4,7 @@ using MongoDB.Driver;
 
 namespace Family_Spend.Services
 {
-    public class FamiliasService
+    public class FamiliasService : IFamiliasService
     {
         private readonly IMongoCollection<Familia> _familiasCollection;
 
@@ -12,7 +12,6 @@ namespace Family_Spend.Services
         {
             var mongoClient = new MongoClient(familiasService.Value.ConnectionString);
             var mongoDatabase = mongoClient.GetDatabase(familiasService.Value.DatabaseName);
-
             _familiasCollection = mongoDatabase.GetCollection<Familia>(familiasService.Value.FamiliaConnectionName);
         }
 

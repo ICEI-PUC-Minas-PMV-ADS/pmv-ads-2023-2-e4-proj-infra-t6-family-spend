@@ -9,31 +9,20 @@ namespace Family_Spend.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }
 
+        public string FamiliaId { get; set; }
+
         [BsonElement("NomeUsuario")]
         public string NomeUsuario { get; set; } = null;
 
         [BsonElement("Email")]
-        public string Email { get; set; }        
-        
-        [BsonElement("Senha")]
-        public string Senha { get; set; }
+        public string Email { get; set; }
 
         [BsonElement("RelacaoFamiliar")]
         public string RelacaoFamiliar { get; set; }
 
-        public List<Gasto> Gastos { get; set; }
+        public string Senha { get; set; }
 
-        public float? TotalMensal 
-        { 
-            get 
-            {
-                float? total = 0;
-                foreach (var gasto in Gastos)
-                {
-                    total += gasto.Valor;
-                }
-                return total;
-            }
-        }
+        [BsonIgnoreIfNull]
+        public string NomeFamilia { get; set; }
     }
 }

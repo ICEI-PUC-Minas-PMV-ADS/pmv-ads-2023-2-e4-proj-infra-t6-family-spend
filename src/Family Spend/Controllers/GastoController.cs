@@ -1,4 +1,4 @@
-﻿/*using Family_Spend.Models;
+﻿using Family_Spend.Models;
 using Family_Spend.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,15 +8,12 @@ namespace Family_Spend.Controllers
     [Route("api/[controller]")]
     public class GastoController : ControllerBase
     {
-        private readonly GastosService _gastosService;
+        private readonly IGastosService _gastosService;
 
-        public GastoController(GastosService gastoService)
+        public GastoController(IGastosService gastoService)
         {
             _gastosService = gastoService;
         }
-
-        [HttpGet]
-        public async Task<List<Gasto>> Get() => await _gastosService.GetAsync();
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Gasto>> Get(string id)
@@ -53,4 +50,4 @@ namespace Family_Spend.Controllers
             return NoContent();
         }
     }
-}*/
+}

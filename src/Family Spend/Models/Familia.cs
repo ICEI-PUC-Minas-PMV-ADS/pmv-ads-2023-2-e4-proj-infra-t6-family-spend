@@ -3,6 +3,7 @@ using MongoDB.Bson.Serialization.Attributes;
 
 namespace Family_Spend.Models
 {
+    [BsonIgnoreExtraElements]
     public class Familia
     {
         [BsonId]
@@ -14,8 +15,5 @@ namespace Family_Spend.Models
 
         [BsonElement("Endereco")]
         public string Endereco { get; set; }
-
-        [BsonElement("Familiar")]
-        public List<Usuario> Familiar { get; set; }
     }
 }

@@ -1,4 +1,4 @@
-﻿/*using Family_Spend.Models;
+﻿using Family_Spend.Models;
 using Family_Spend.Services;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,11 +8,13 @@ namespace Family_Spend.Controllers
     [Route("api/[controller]")]
     public class UsuarioController : ControllerBase
     {
-        private readonly UsuariosService _usuariosService;
+        private readonly IUsuariosService _usuariosService;
+        private readonly IFamiliasService _familiasService;
 
-        public UsuarioController(UsuariosService usuarioService)
+        public UsuarioController(IUsuariosService usuarioService, IFamiliasService familiaService)
         {
             _usuariosService = usuarioService;
+            _familiasService = familiaService;
         }
 
         [HttpGet]
@@ -28,6 +30,12 @@ namespace Family_Spend.Controllers
         [HttpPost]
         public async Task<IActionResult> Post(Usuario usuarioNovo)
         {
+            var familia = await _familiasService.GetAsync(usuarioNovo.FamiliaId);
+            if (familia is null)
+                throw new Exception("Usuário precisa ser associado a um grupo familiar");
+            else
+                usuarioNovo.NomeFamilia = familia.NomeFamilia;
+
             await _usuariosService.CreateAsync(usuarioNovo);
             return CreatedAtAction(nameof(Get), new { id = usuarioNovo.Id }, usuarioNovo);
         }
@@ -35,6 +43,7 @@ namespace Family_Spend.Controllers
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, Usuario usuarioAtualizado)
         {
+            usuarioAtualizado.NomeFamilia = null;
             var usuario = await _usuariosService.GetAsync(id);
             if (usuario is null)
                 return NotFound();
@@ -53,4 +62,4 @@ namespace Family_Spend.Controllers
             return NoContent();
         }
     }
-}*/
+}
