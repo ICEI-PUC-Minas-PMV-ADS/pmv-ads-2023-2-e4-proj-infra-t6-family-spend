@@ -1,6 +1,7 @@
 using Family_Spend.Models;
 using Family_Spend.Services;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
 
@@ -11,10 +12,18 @@ builder.Services.Configure<FamilySpendDatabaseSettings>(builder.Configuration.Ge
 builder.Services.AddTransient<IFamiliasService, FamiliasService>();
 builder.Services.AddTransient<IUsuariosService, UsuariosService>();
 builder.Services.AddTransient<IGastosService, GastosService>();
+
 builder.Services.AddDbContext<AppDbContext>(options => options.UseInMemoryDatabase("AppDb"));
 
+builder.Services.AddIdentityCore<IdentityUser>()
+                .AddEntityFrameworkStores<AppDbContext>()
+                .AddApiEndpoints();
+
+
+builder.Services.AddAuthentication().AddBearerToken(IdentityConstants.BearerScheme);
+builder.Services.AddAuthorizationBuilder();
+
 builder.Services.AddControllers();
-builder.Services.AddIdentityCore<IdentityUser>();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -35,9 +44,13 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+app.MapIdentityApi<IdentityUser>();
+
+app.MapGet("/familySpend", (ClaimsPrincipal user) => $"Olá, {user.Identity.Name}").RequireAuthorization();
+
 app.Run();
 
-class AppDbContext : DbContext
+class AppDbContext : IdentityDbContext<IdentityUser>
 {
     public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
 }
