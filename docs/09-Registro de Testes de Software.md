@@ -33,6 +33,21 @@ Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identi
 >
 > - ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-proj-infra-t6-family-spend/assets/98751183/7b67c01e-b458-442b-9766-5886ac127b34)
 >
-> - > - ## Teste de Inclusão, Busca, Edição e Exclusão de Gastos Familiares
->   >
->   > - 
+> - ## Teste de Inclusão, Busca, Edição e Exclusão de Gastos Familiares
+>
+> ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-proj-infra-t6-family-spend/assets/98751183/7dde4d93-c893-4086-a84b-e7943731ce62)
+>
+> ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-proj-infra-t6-family-spend/assets/98751183/729423a3-dc78-482b-bd0a-2f5ed9e0f057)
+>
+> ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-proj-infra-t6-family-spend/assets/98751183/52c80ad3-d074-4afc-80f5-bb837e4be88e)
+>
+> ![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-proj-infra-t6-family-spend/assets/98751183/fb37a10a-5aff-409f-afa6-b1cb77cca332)
+
+
+> - ## Teste de Autenticação
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-proj-infra-t6-family-spend/assets/98751183/c0dfeb6f-c207-4939-8300-db5c77d6c99b)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-proj-infra-t6-family-spend/assets/98751183/cc0f12c4-5c6a-48c3-a45d-b8a646a6cad4)
+
+![image](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2023-2-e4-proj-infra-t6-family-spend/assets/98751183/d791f31a-0f1d-4797-9103-045213d3abe2)
