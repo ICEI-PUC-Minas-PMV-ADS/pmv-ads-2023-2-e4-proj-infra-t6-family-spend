@@ -1,0 +1,11 @@
+.alert{
+  color: red;
+}
+
+.container span{
+  margin-left: .2rem;
+}
+
+.buttonBorder{
+  cursor: pointer;
+}

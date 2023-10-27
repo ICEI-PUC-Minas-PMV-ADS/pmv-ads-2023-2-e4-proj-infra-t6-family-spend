@@ -1,0 +1,17 @@
+#buttonWhite{
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  color: #535353;
+  margin-top: .5rem;
+  border-radius: 10px;
+  padding: .5rem 1rem;
+  background-color: transparent;
+}
+
+#buttonWhite:hover{
+  transition: .5s;
+  cursor: pointer;
+  transform: translateY(.3rem);
+  background-color: #6bfc66;
+}

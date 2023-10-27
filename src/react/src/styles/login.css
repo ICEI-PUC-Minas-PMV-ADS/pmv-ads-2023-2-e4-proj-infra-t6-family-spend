@@ -1,0 +1,10 @@
+.link{
+  text-decoration: none;
+  color: #f3f3f3;
+  cursor: pointer;
+
+}
+
+.container span{
+  margin-left: .2rem;
+}

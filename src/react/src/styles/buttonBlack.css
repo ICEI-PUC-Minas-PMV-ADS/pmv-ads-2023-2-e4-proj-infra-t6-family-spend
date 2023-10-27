@@ -1,0 +1,19 @@
+#button{
+  border: none;
+  font-weight: 600;
+  color: #f3f3f3;
+  border-radius: 10px;
+  padding: .5rem 1rem;
+  background-color: #535353;
+  transition: 1s;
+}
+
+#button p{
+  margin: 0;
+}
+
+#button:hover{
+  transition: .5s;
+  transform: translateY(.3rem);
+  background-color: #267024;
+}

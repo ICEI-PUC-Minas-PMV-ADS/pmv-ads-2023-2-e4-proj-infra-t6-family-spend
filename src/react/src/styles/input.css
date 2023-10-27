@@ -1,0 +1,15 @@
+.form{
+  gap: .15rem;
+  display: flex;
+  align-items: start;
+  margin-bottom: .5rem;
+  flex-direction: column;
+}
+
+.input{
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: 10px;
+  background-color: #ececec;
+}
+
