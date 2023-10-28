@@ -7,8 +7,9 @@
 }
 
 .input{
-  padding: .5rem 1rem;
+  min-width: 195px;
   border: none;
+  padding: .5rem 1rem;
   border-radius: 10px;
   background-color: #ececec;
 }

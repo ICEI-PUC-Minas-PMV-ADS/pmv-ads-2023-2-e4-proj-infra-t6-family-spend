@@ -11,7 +11,7 @@ export default function Home() {
   const [component, setComponent] = useState("");
   return (
     <>
-      <Header setComponent={setComponent}/>
+      <Header setComponent={setComponent} text="Cadastre-se"/>
       <div className="main">
         <Open/>
         {/* <Login/> */}

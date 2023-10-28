@@ -1,13 +1,13 @@
-import Input from "./input";
 import '../styles/signIn.css'
 import ButtonBlack from './ButtonBlack'
+import Input from './Input'
 
 
 export default function SignIn(props) {
   return (
     <>
       <div className="container">      
-        <h2>Criar Conta</h2>
+        <h2>Criar Família</h2>
         <p>Já possui conta? Faça Login  
           <span onClick={() => props.setComponent("")}>
             aqui

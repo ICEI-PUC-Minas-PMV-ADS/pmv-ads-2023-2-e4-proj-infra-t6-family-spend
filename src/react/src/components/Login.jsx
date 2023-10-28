@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom'
 import '../styles/login.css'
-import Input from './input'
 import ButtonBlack from './ButtonBlack'
 import ButtonWhite from './ButtonWhite'
+import Input from './Input'
 
 export default function Login(props){
   return(
@@ -24,13 +24,10 @@ export default function Login(props){
           type="password"
           text="*****"
         />
-          <Link to="spending" className='link'><ButtonBlack text="Login"/></Link>
-        
-        <ButtonWhite >
-          <div onClick={() => props.setComponent("forgotPassword")}>
-            Esqueceu sua Senha?
-          </div>
-        </ButtonWhite>
+        <Link to="spending" className='link'><ButtonBlack text="Login"/></Link>
+        <div onClick={() => props.setComponent("forgotPassword")}>
+          <ButtonWhite text="Esqueceu sua Senha?"/>
+        </div>
       </div>
     </>
   )

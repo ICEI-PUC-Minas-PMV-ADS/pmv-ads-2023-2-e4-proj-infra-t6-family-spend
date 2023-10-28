@@ -10,6 +10,11 @@
 
 }
 
+.hamburguer{
+	height: 50px;
+	width: 50px;
+}
+
 .center {
 	top: 6%;
 	left: 10%;
@@ -126,7 +131,6 @@
 }
 
 .logo{
-  margin-left: 25rem;
 	z-index: 2;
 }
 

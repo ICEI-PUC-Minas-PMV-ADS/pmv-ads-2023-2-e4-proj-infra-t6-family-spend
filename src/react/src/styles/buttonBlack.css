@@ -6,6 +6,7 @@
   padding: .5rem 1rem;
   background-color: #535353;
   transition: 1s;
+  cursor: pointer;
 }
 
 #button p{

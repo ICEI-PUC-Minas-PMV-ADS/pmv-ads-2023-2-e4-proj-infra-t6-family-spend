@@ -1,0 +1,18 @@
+.section{
+  gap: 1.5rem;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.head{
+  text-align: center;
+}
+
+.actions{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
