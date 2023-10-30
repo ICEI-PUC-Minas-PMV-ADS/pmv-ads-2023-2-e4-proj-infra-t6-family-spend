@@ -54,3 +54,62 @@ C:\Users\Gabriel\source\repos\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\F
 C:\Users\Gabriel\source\repos\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family Spend\obj\Debug\net8.0\ref\Family Spend.dll
 C:\Users\Gabriel\source\repos\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family Spend\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Users\Gabriel\source\repos\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family Spend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\appsettings.Development.json
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\appsettings.json
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\package.json
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Family Spend.exe
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Family Spend.deps.json
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Family Spend.runtimeconfig.json
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Family Spend.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Family Spend.pdb
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\AWSSDK.Core.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\AWSSDK.SecurityToken.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\DnsClient.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.InMemory.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Microsoft.IdentityModel.Abstractions.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Microsoft.IdentityModel.Logging.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\MongoDB.Bson.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\MongoDB.Driver.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\MongoDB.Driver.Core.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\MongoDB.Libmongocrypt.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\SharpCompress.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Snappier.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\ZstdSharp.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\runtimes\linux\native\libmongocrypt.so
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\runtimes\osx\native\libmongocrypt.dylib
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\bin\Debug\net8.0\runtimes\win\native\mongocrypt.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\Family Spend.csproj.AssemblyReference.cache
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\Family Spend.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\Family Spend.AssemblyInfoInputs.cache
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\Family Spend.AssemblyInfo.cs
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\Family Spend.csproj.CoreCompileInputs.cache
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\Family Spend.MvcApplicationPartsAssemblyInfo.cs
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\Family Spend.MvcApplicationPartsAssemblyInfo.cache
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\Family Spend.RazorAssemblyInfo.cache
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\Family Spend.RazorAssemblyInfo.cs
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\Family Spend.sourcelink.json
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\staticwebassets.build.json
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\staticwebassets.development.json
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\staticwebassets\msbuild.Family Spend.Microsoft.AspNetCore.StaticWebAssets.props
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\staticwebassets\msbuild.build.Family Spend.props
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.Family Spend.props
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.Family Spend.props
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\staticwebassets.pack.json
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\scopedcss\bundle\Family Spend.styles.css
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\Family Spend.csproj.CopyComplete
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\Family Spend.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\refint\Family Spend.dll
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\Family Spend.pdb
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\Family Spend.genruntimeconfig.cache
+D:\GitHub\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\src\Family-Spend\obj\Debug\net8.0\ref\Family Spend.dll

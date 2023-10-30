@@ -4,8 +4,25 @@ import "../styles/newFamilyMember.css";
 import ButtonBlack from '../components/ButtonBlack.jsx'
 import ButtonWhite from '../components/ButtonWhite.jsx'
 import Input from "../components/Input";
+import { useState, useEffect } from 'react';
 
 export default function NewFamilyMember() {
+
+  const [postId, setPostId] = useState(null);
+
+  useEffect(() => {
+    const requestOptions = {
+      method: 'POST',
+      headers: {
+      'Content-Type': 'application-json'
+    },
+      body: JSON.stringify({'nomeusuario': 'fulano'})
+    };
+    fetch('https://family-spend-2e147db72cad.herokuapp.com/api/usuario', requestOptions)
+    .then(response => response.json())
+    .then(data => setPostId(data.id));
+  }, []);
+
   const isRegister = true
   function verifyRegister() {
     if (isRegister) {
@@ -27,10 +44,10 @@ export default function NewFamilyMember() {
           <p>Insira abaixo as informações do Familiar</p>
         </div>
         <div className="register">
-          <Input label="Nome" text="Lucas" type="text"/>
-          <Input label="Relação Familiar" text="Filho" type="text"/>
-          <Input label="Email" text="oi@pucminas.br" type="email"/>
-          <Input label="Senha" type="password" text="*****" />
+          <Input id='nome' label="Nome" text="Lucas" type="text"/>
+          <Input id='relacao' label="Relação Familiar" text="Filho" type="text"/>
+          <Input id='email' label="Email" text="oi@pucminas.br" type="email"/>
+          <Input id='senha' label="Senha" type="password" text="*****" />
         </div>
         <div className="actions">
           <Link to="../spending" className='link' onClick={verifyRegister}><ButtonBlack text="Cadastrar Familiar"/></Link>

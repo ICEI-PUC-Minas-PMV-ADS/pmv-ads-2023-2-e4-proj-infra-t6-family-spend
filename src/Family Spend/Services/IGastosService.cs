@@ -6,6 +6,7 @@ namespace Family_Spend.Services
 {
     public interface IGastosService
     {
+        Task<List<Gasto>> GetAsync();
         Task<Gasto> GetAsync(string id);
         Task CreateAsync(Gasto gastoNovo);
         Task UpdateAsync(string id, Gasto gastoAtualizado);

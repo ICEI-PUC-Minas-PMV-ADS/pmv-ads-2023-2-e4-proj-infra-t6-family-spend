@@ -17,6 +17,7 @@ namespace Family_Spend.Services
             _gastosCollection = mongoDatabase.GetCollection<Gasto>(gastosService.Value.GastoConnectionName);
         }
 
+        public async Task<List<Gasto>> GetAsync() => await _gastosCollection.Find(x => true).ToListAsync();
         public async Task<Gasto> GetAsync(string id) => await _gastosCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
         public async Task CreateAsync(Gasto gastoNovo) => await _gastosCollection.InsertOneAsync(gastoNovo);
         public async Task UpdateAsync(string id, Gasto gastoAtualizado) => await _gastosCollection.ReplaceOneAsync(x => x.Id == id, gastoAtualizado);

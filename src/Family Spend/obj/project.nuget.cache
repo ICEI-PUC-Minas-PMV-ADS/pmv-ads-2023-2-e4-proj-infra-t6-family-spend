@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9Of7irQi/xG1H5j8GByUvq3hkHULONj3pQE8Ny9zpgxfHjWXe4cS9ikQUj94pxz8p72jq3T7STCF0xyw/e1npg==",
+  "dgSpecHash": "1UiHTaQ+8amGiW2LTomvEqzeOgbynFzwUs5QRgRF8BiTcNfH2V2GIIhs6reH7fUhOCtdyCjPHyOiaJ7Or8AS7Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gabriel\\source\\repos\\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\\src\\Family Spend\\Family Spend.csproj",
+  "projectFilePath": "D:\\GitHub\\pmv-ads-2023-2-e4-proj-infra-t6-family-spend\\src\\Family-Spend\\Family Spend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gabriel\\.nuget\\packages\\awssdk.core\\3.7.100.14\\awssdk.core.3.7.100.14.nupkg.sha512",
     "C:\\Users\\Gabriel\\.nuget\\packages\\awssdk.securitytoken\\3.7.100.14\\awssdk.securitytoken.3.7.100.14.nupkg.sha512",

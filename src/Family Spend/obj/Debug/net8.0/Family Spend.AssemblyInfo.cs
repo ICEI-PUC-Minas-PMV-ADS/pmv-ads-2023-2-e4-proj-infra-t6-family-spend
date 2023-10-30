@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Family Spend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dabf9f52daaa7a9dafc63272ef8fb121dcae7be7")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
 [assembly: System.Reflection.AssemblyProductAttribute("Family Spend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Family Spend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

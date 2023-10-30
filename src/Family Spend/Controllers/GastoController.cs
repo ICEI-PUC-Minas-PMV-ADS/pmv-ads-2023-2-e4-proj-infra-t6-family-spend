@@ -15,6 +15,9 @@ namespace Family_Spend.Controllers
             _gastosService = gastoService;
         }
 
+        [HttpGet]
+        public async Task<List<Gasto>> Get() => await _gastosService.GetAsync();
+
         [HttpGet("{id}")]
         public async Task<ActionResult<Gasto>> Get(string id)
         {

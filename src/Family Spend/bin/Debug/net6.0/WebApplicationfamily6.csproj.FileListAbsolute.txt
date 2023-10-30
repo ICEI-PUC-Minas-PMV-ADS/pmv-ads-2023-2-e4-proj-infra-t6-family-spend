@@ -1,0 +1,20 @@
+D:\Microsoft Visual Studio\2022\Sources\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.csproj.AssemblyReference.cache
+D:\Microsoft Visual Studio\2022\Sources\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.GeneratedMSBuildEditorConfig.editorconfig
+D:\Microsoft Visual Studio\2022\Sources\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.AssemblyInfoInputs.cache
+D:\Microsoft Visual Studio\2022\Sources\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.AssemblyInfo.cs
+D:\Microsoft Visual Studio\2022\Sources\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.csproj.CoreCompileInputs.cache
+D:\Microsoft Visual Studio\2022\Sources\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.MvcApplicationPartsAssemblyInfo.cs
+D:\Microsoft Visual Studio\2022\Sources\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.MvcApplicationPartsAssemblyInfo.cache
+D:\Microsoft Visual Studio\2022\Sources\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.RazorAssemblyInfo.cache
+D:\Microsoft Visual Studio\2022\Sources\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.RazorAssemblyInfo.cs
+D:\Microsoft Visual Studio\2022\Sources\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.sourcelink.json
+D:\GitHub\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.csproj.AssemblyReference.cache
+D:\GitHub\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.GeneratedMSBuildEditorConfig.editorconfig
+D:\GitHub\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.AssemblyInfoInputs.cache
+D:\GitHub\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.AssemblyInfo.cs
+D:\GitHub\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.csproj.CoreCompileInputs.cache
+D:\GitHub\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.MvcApplicationPartsAssemblyInfo.cs
+D:\GitHub\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.MvcApplicationPartsAssemblyInfo.cache
+D:\GitHub\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.RazorAssemblyInfo.cache
+D:\GitHub\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.RazorAssemblyInfo.cs
+D:\GitHub\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.sourcelink.json
