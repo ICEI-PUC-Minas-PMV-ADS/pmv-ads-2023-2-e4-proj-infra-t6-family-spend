@@ -51,7 +51,7 @@ export default function NewFamilyMember() {
         </div>
         <div className="actions">
           <Link to="../spending" className='link' onClick={verifyRegister}><ButtonBlack text="Cadastrar Familiar"/></Link>
-          <Link to="../spending" className='link'><ButtonWhite text="Voltar"/></Link>
+          <Link to="../spend" className='link'><ButtonWhite text="Spend"/></Link>
         </div>
       </div>
     </>

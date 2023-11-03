@@ -3,7 +3,7 @@ import Home from './pages/home';
 import Spending from './pages/Spending';
 import NewFamilyMember from './pages/NewFamilyMember';
 import NewSpend from './pages/NewSpend';
-import Importar from './pages/Importar';
+import useAxios from './components/useAxios';
 import Spend from './pages/Spend';
 
 
@@ -26,7 +26,7 @@ const router = createBrowserRouter([
     },
     {
       path: "/importar",
-      element: <Importar/>,
+      element: <useAxios/>,
     },
     {
       path: "/spend",
