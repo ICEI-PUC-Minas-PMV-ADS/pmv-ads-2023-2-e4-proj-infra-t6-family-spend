@@ -8,4 +8,7 @@ Os testes que deverão ser feitos durante o projeto são:
 2. Testes de Requisitos funcionais
 3. Testes de Requisitos não funcionais
 4. Teste final do projeto.
- 
+5. Teste da API
+6. Teste das rotas do Front-end
+7. Teste da integração
+8. Teste das requisições 
