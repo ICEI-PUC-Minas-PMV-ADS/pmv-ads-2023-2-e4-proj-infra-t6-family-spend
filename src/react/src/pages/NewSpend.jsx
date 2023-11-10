@@ -45,6 +45,9 @@ export default function NewSpend(){
 
   return(
     <>
+    <Header>
+      <Link to="../NewSpend" className='link'>Novo Gasto</Link>
+    </Header>
     {console.log(error.response)}
       <div className="section">
         <div className="head">
