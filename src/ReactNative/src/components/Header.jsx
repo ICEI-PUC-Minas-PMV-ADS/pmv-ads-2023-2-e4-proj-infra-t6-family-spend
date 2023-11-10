@@ -8,7 +8,7 @@ export default function Navbar() {
   return(
     <>
       <LinearGradient style={{
-          width: 400,
+          width: '100%',
           height: 80,
           alignItems: 'center',
           justifyContent: 'flex-end'
@@ -17,7 +17,7 @@ export default function Navbar() {
 	      end={{x:1,y:0}}
         colors={['#333333','#267024']}>
         <Appbar style={styles.appBar}>
-          <Image source={require('../../assets/favicon.png')} style={styles.tinyLogo}/>
+          {/* <Image source={require('../../assets/favicon.png')} style={styles.tinyLogo}/> */}
           <Text style={styles.headerTitle}>Family Spend</Text>
         </Appbar>
       </LinearGradient>
