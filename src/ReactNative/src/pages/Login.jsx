@@ -21,7 +21,7 @@ export default function LoginPage (props) {
 
       <Button 
         mode="contained"
-        onPress={() => {props.setIsLogin = true} }
+        onPress={() => {props.setLogin(true)} }
         buttonColor='#333'
       >
         Fazer Login
