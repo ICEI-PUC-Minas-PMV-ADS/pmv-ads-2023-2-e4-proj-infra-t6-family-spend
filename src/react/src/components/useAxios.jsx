@@ -6,7 +6,7 @@ const useAxios = (configObj) =>{
     axiosInstance,
     method,
     url,
-    requestConfig = { }
+    data = { }
   } = configObj;
   
   const [response, setResponse] =  useState([]);
@@ -18,7 +18,7 @@ const useAxios = (configObj) =>{
     const fetchData = async () => {
       try{
         const res = await axiosInstance[method.toLowerCase()](url, {
-          ...requestConfig,
+          ...data,
           signal: controller.signal
         });
         console.log(res);

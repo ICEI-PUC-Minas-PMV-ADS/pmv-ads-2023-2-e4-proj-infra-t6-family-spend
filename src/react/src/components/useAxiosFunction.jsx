@@ -12,7 +12,7 @@ const useAxiosFunction = () => {
       axiosInstance,
       method,
       url,
-      requestConfig = {}
+      data = {}
     } = configObj;
 
     try {
@@ -20,11 +20,20 @@ const useAxiosFunction = () => {
       const ctrl = new AbortController();
       setController(ctrl);
       const res = await axiosInstance[method.toLowerCase()](url, {
-        ...requestConfig,
+        ...data,
         //signal: ctrl.signal
       });
-      console.log(res);
-      setResponse(res.data);
+      debugger;
+      if(method == 'DELETE'){
+        await axios.delete(url);
+        var urlId = url.split('/');
+        const list = res.data.filter(x => x.id !== urlId.pop());
+        setResponse(list);
+      }
+      else{
+        console.log(res);
+        setResponse(res.data);
+      }
     } catch (err) {
       console.log(err.response);
       setError(err.message);
@@ -33,10 +42,10 @@ const useAxiosFunction = () => {
     }
   }
 
-  useEffect(() => {
-    console.log(controller);
-    return () => controller && controller.abort();
-  }, [controller])
+  // useEffect(() => {
+  //   console.log(controller);
+  //   return () => controller && controller.abort();
+  // }, [controller])
 
   return [response, error, loading, axiosFetch];
 

@@ -7,13 +7,38 @@ import Input from "../components/Input.jsx";
 import React, { useState, useEffect } from 'react';
 import useAxios from '../components/useAxios';
 import axios from '../api/apiGasto'
+import useAxiosFunction from '../components/useAxiosFunction.jsx';
 
 export default function Spend() {
 
-  const [gasto, error, loading, refetch] = useAxios({
-    axiosInstance: axios,
-    method: 'GET',
-  })
+  const [gasto, error, loading, axiosFetch] = useAxiosFunction()
+
+  const getData = () => {
+    axiosFetch({
+      axiosInstance: axios,
+      method: 'GET',
+      url: '/gasto',
+    });
+  }
+
+  useEffect(() => {
+    getData();
+    //eslint-disable-next-line
+  }, [])
+
+  const deletarGasto = (id) => {
+    debugger;
+    axiosFetch(
+      {
+        axiosInstance: axios,
+        method: 'DELETE',
+        url: `/gasto/${id}`,
+        data: {
+          id: id
+        }
+      }
+    )
+  }
 
   const z = 0;
   const total = Object.values(gasto).reduce((t, {valor}) => t + valor, 0);
@@ -35,6 +60,7 @@ export default function Spend() {
               <span>Valor: {item.valor}</span>
               <br />
               <span>Responsável: {item.nomeUsuario}</span>
+              <button id='btnDeletar' onClick={() => deletarGasto(item.id)}>DELETAR</button>
             </div>
           ))}
           </div>

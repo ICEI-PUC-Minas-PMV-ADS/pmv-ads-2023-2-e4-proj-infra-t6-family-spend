@@ -8,13 +8,14 @@ import React, { useState, useEffect } from 'react';
 import axios from '../api/apiGasto';
 import useAxiosFunction from '../components/useAxiosFunction';
 
-export default function NewSpend(){
-  const [posts, error, loading, axiosFetch] = useAxiosFunction();
+export default function NewSpend() {
+  const [gastos, error, loading, axiosFetch] = useAxiosFunction();
 
   const getData = () => {
     axiosFetch({
       axiosInstance: axios,
       method: 'GET',
+      url: '/gasto',
     });
   }
 
@@ -23,31 +24,27 @@ export default function NewSpend(){
     //eslint-disable-next-line
   }, [])
 
-  let gastoNovo = {
-    familiaId: 'teste',
-    usuarioId: 'teste',
-    nomeGasto: 'teste',
-    valor: 0,
-    nomeUsuario: 'user',
-  }
-
   const handleSubmit = () => {
     axiosFetch(
       {
         axiosInstance: axios,
         method: 'POST',
-        requestConfig:{
-          data: gastoNovo
+        url: '/gasto',
+        data: {
+          id: null,
+          familiaId: 'string',
+          usuarioId: 'string',
+          nomeGasto: document.getElementById('nomeGasto').value,
+          valor: Number(document.getElementById('valor').value),
+          data: "2023-10-30",
+          nomeUsuario: document.getElementById('nomeUsuario').value,
         }
       }
     )
   }
 
-  return(
+  return (
     <>
-    <Header>
-      <Link to="../NewSpend" className='link'>Novo Gasto</Link>
-    </Header>
     {console.log(error.response)}
       <div className="section">
         <div className="head">
@@ -55,13 +52,16 @@ export default function NewSpend(){
           <p>Insira abaixo as informações do Gasto</p>
         </div>
         <div className="register">
-          <Input id='nomeGasto' label="Nome do Gasto" type="text"/>
-          <Input id='valor' label="Preço" type="int"/>
-          <Input id='data' label="Data da Compra" type="text"/>
-          <Input id='nomeUsuario' label="Nome do Responsável" type="text"/>
+          <input id='nomeGasto' label="Nome do Gasto" type="text" />
+          <br />
+          <input id='valor' label="Preço" type="int" />
+          <br />
+          <input id='data' label="Data da Compra" type="text" />
+          <br />
+          <input id='nomeUsuario' label="Nome do Responsável" type="text" />
         </div>
         <div className="actions">
-          <Link to="../spend" className='link'><ButtonWhite text="Spend"/></Link>
+          <Link to="../spend" className='link'><ButtonWhite text="Spend" /></Link>
           <button onClick={handleSubmit}>Enviar</button>
         </div>
       </div>
