@@ -1,0 +1,31 @@
+.table{
+  max-width: 90vw;
+  max-height: 66vh;
+  border-collapse: collapse;
+  overflow-y: scroll ;
+}
+
+td{
+  text-align: center;
+}
+
+tr{
+  border-bottom: 1px solid black ;
+  height: 50px;
+}
+
+.table > tr > td:nth-child(4), .table > tr:last-of-type > td, .table > tr:last-of-type{
+  border: none;
+}
+
+thead th:nth-child(1){
+  min-width: 10rem;
+}
+
+thead th:nth-child(2){
+  min-width: 10rem;
+}
+
+thead th:nth-child(3){
+  min-width: 5rem;
+}

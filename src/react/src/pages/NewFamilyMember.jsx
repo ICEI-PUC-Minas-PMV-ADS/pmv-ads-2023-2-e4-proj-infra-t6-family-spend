@@ -54,12 +54,12 @@ export default function newFamilyMember() {
           <p>Insira abaixo as informações do Familiar</p>
         </div>
         <div className="register">
-          <input id='nomeUsuario' label="Nome" text="Lucas" type="text"/>
-          <input id='email' label="Email" text="oi@pucminas.br" type="email"/>
-          <input id='senha' label="Senha" type="password" text="*****" />
+          <Input id='nomeUsuario' label="Nome" text="Lucas" type="text"/>
+          <Input id='email' label="Email" text="oi@pucminas.br" type="email"/>
+          <Input id='senha' label="Senha" type="password" text="*****" />
         </div>
         <div className="actions">
-          <button onClick={postUsuario}>Cadastrar Familiar</button>
+          <ButtonBlack onClick={postUsuario} text='Cadastrar Familiar' ></ButtonBlack>
         </div>
       </div>
     </>

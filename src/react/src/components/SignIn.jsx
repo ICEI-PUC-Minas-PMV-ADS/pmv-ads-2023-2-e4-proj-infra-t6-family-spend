@@ -30,39 +30,44 @@ export default function SignIn(props) {
     <>
       <div className="container">
 
-        <h1>Login</h1>
-        <p>Ainda não possui uma conta? Cadastre-se
-          <span onClick={() => props.setComponent("signIn")}>
+        <h1>SignIn</h1>
+        <p>Ja possui uma conta? Faça login
+          <span onClick={() => props.setComponent("login")}>
             aqui
           </span>
         </p>
 
-        <input id='email'
+        <Input 
           label="Email"
           type="text"
+          id='email'
         />
 
-        <input id='username'
+        <Input 
           label="Nome de Usuário"
           type="text"
+          id='username'
         />
 
-        <input id='fullName'
+        <Input 
           label="Nome Completo"
           type="text"
+          id='fullName'
         />
 
-        <input id='password'
+        <Input 
           label="Senha"
           type="password"
+          id='password'
         />
 
-        <input id='confirmPassword'
+        <Input 
           label="Confirme a Senha"
           type="password"
+          id='confirmPassword'
         />
 
-        <button className='link' onClick={fazerLogin}>Login</button>
+        <ButtonBlack className='link' click={fazerLogin} text='Login'></ButtonBlack>
       </div>
     </>
   )

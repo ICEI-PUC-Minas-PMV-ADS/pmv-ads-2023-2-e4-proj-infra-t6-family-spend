@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Header from "../components/Header";
-import "../styles/newFamilyMember.css";
+import "../styles/spend.css";
 import ButtonBlack from '../components/ButtonBlack.jsx'
 import ButtonWhite from '../components/ButtonWhite.jsx'
 import Input from "../components/Input.jsx";
@@ -53,32 +53,32 @@ export default function Spend() {
         <div className="head">
           <h2>Lista de Gastos</h2>
         </div>
-        <div className="register">
-          <div>{gasto.map((item, index) => (
-            <div key={index}>
-              <span>Gasto: {item.nomeGasto}</span>
-              <br></br>
-              <span>Valor: {item.valor}</span>
-              <br />
-              <span>Responsável: {item.nomeUsuario}</span>
-              <button id='btnDeletar' onClick={() => deletarGasto(item.id)}>DELETAR</button>
-            </div>
+        <table className='table'>
+          <thead>
+            <th>Responsável</th>
+            <th>Gasto</th>
+            <th>Valor</th>
+          </thead>
+          {gasto.map((item, index) => (
+            <tr key={index}>
+              <td>{item.nomeUsuario}</td>
+              <td>{item.nomeGasto}</td>
+              <td>{item.valor}</td>
+              <td>
+                <ButtonBlack id='btnDeletar' text='Deletar' click={() => deletarGasto(item.id)}></ButtonBlack>
+              </td>
+            </tr>
           ))}
-          </div>
-          <br />
-          <span>{total}</span>
-
-          <br />
-
+          <tr>
+            <td></td>
+            <td><span>Total:</span></td>
+            <td>{total}</td>
+          </tr>
+        </table>
           <Link to="../spending" className='link'><ButtonWhite text="Voltar" /></Link>
-        </div>
       </div>
 
-      <div>{gasto.map((item, index) => (
-        <div key={index}>
-          <span>{item.nomeGasto}</span>
-        </div>
-      ))}</div>
+      
     </>
   )
 }

@@ -35,16 +35,18 @@ export default function Login(props){
             aqui
           </span>
         </p>
-        <input id='email'
+        <Input
           label="Email"
-          type="text"
+          type="text" 
+          id='email'
         />
-        <input id='password'
+        <Input
           label="Senha"
           type="password"
+          id='password'
         />
 
-        <button className='link' onClick={fazerLogin}>Login</button>
+        <ButtonBlack click={fazerLogin} text='Login'></ButtonBlack>
 
         <div onClick={() => props.setComponent("forgotPassword")}>
           <ButtonWhite text="Esqueceu sua Senha?"/>

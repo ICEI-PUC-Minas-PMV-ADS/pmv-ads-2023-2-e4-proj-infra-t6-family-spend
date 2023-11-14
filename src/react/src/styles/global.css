@@ -11,3 +11,12 @@ span{
   cursor: pointer;
   font-weight: bold;
 }
+
+.section{
+  gap: .5rem;
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}

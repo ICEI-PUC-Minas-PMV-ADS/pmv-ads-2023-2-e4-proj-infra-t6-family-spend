@@ -14,9 +14,6 @@ export default function Home() {
       <Header setComponent={setComponent} text="Cadastre-se"/>
       <div className="main">
         <Open/>
-        {/* <Login/> */}
-        {/* <SignIn/> */}
-        {/* <ForgotPassword/> */}
         {(component == "signIn")?<
           SignIn setComponent={setComponent}/>:
           (component == "forgotPassword")?

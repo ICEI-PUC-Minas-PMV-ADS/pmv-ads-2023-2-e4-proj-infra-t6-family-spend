@@ -1,17 +1,10 @@
-.section{
-  gap: 1.5rem;
-  height: 88vh;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-
 .head{
   text-align: center;
+  margin-bottom: 1rem;
 }
 
 .actions{
+  gap: 15px;
   display: flex;
   align-items: center;
   flex-direction: column;

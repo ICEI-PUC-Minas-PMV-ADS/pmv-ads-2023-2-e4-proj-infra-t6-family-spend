@@ -45,24 +45,24 @@ export default function NewSpend() {
 
   return (
     <>
-    {console.log(error.response)}
+      {console.log(error.response)}
+      <Header>
+        <Link to="../spend" className='link'>Gastos</Link>
+      </Header>
+
       <div className="section">
         <div className="head">
           <h2>Cadastrar novo Gasto</h2>
           <p>Insira abaixo as informações do Gasto</p>
         </div>
-        <div className="register">
-          <input id='nomeGasto' label="Nome do Gasto" type="text" />
-          <br />
-          <input id='valor' label="Preço" type="int" />
-          <br />
-          <input id='data' label="Data da Compra" type="text" />
-          <br />
-          <input id='nomeUsuario' label="Nome do Responsável" type="text" />
+        <div className="register" >
+          <Input id='nomeGasto' label="Nome do Gasto" type="text" text='Conta de luz'/>
+          <Input id='valor' label="Preço" type="int" text='R$ 35,00' />
+          <Input id='data' label="Data da Compra" type="date" />
+          <Input id='nomeUsuario' label="Nome do Responsável" type="text" text='Luiz'/>
         </div>
         <div className="actions">
-          <Link to="../spend" className='link'><ButtonWhite text="Spend" /></Link>
-          <button onClick={handleSubmit}>Enviar</button>
+          <ButtonBlack click={handleSubmit} text='Gastar'></ButtonBlack>
         </div>
       </div>
     </>
