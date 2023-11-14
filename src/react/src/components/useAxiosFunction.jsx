@@ -23,7 +23,6 @@ const useAxiosFunction = () => {
         ...data,
         //signal: ctrl.signal
       });
-      debugger;
       if(method == 'DELETE'){
         await axios.delete(url);
         var urlId = url.split('/');

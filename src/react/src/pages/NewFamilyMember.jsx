@@ -4,37 +4,48 @@ import "../styles/newFamilyMember.css";
 import ButtonBlack from '../components/ButtonBlack.jsx'
 import ButtonWhite from '../components/ButtonWhite.jsx'
 import Input from "../components/Input";
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
+import axios from '../api/api.js';
+import useAxiosFunction from '../components/useAxiosFunction';
 
-export default function NewFamilyMember() {
+export default function newFamilyMember() {
+  const [usuarios, error, loading, axiosFetch] = useAxiosFunction();
 
-  const [postId, setPostId] = useState(null);
+  const getData = () => {
+    axiosFetch({
+      axiosInstance: axios,
+      method: 'GET',
+      url: '/usuario',
+    });
+  }
 
   useEffect(() => {
-    const requestOptions = {
-      method: 'POST',
-      headers: {
-      'Content-Type': 'application-json'
-    },
-      body: JSON.stringify({'nomeusuario': 'fulano'})
-    };
-    fetch('https://family-spend-2e147db72cad.herokuapp.com/api/usuario', requestOptions)
-    .then(response => response.json())
-    .then(data => setPostId(data.id));
-  }, []);
+    getData();
+    //eslint-disable-next-line
+  }, [])
 
-  const isRegister = true
-  function verifyRegister() {
-    if (isRegister) {
-      alert("Cadastro realizado")
-    }
-    else{
-      alert("Cadastro deu errado")
-    }
+  const postUsuario = () => {
+    axiosFetch(
+      {
+        axiosInstance: axios,
+        method: 'POST',
+        url: '/usuario',
+        data: {
+          id: null,
+          familiaId: 'string',
+          nomeUsuario: document.getElementById('nomeUsuario').value,
+          email: document.getElementById('email').value,
+          relacaoFamiliar: document.getElementById('relacaoFamiliar').value,
+          senha: document.getElementById('senha').value,
+          nomeFamilia: 'string',
+        }
+      }
+    )
   }
 
   return(
     <>
+    {console.log(error.response)}
       <Header>
         <Link to="../NewSpend" className='link'>Novo Gasto</Link>
       </Header>
@@ -44,14 +55,13 @@ export default function NewFamilyMember() {
           <p>Insira abaixo as informações do Familiar</p>
         </div>
         <div className="register">
-          <Input id='nome' label="Nome" text="Lucas" type="text"/>
-          <Input id='relacao' label="Relação Familiar" text="Filho" type="text"/>
-          <Input id='email' label="Email" text="oi@pucminas.br" type="email"/>
-          <Input id='senha' label="Senha" type="password" text="*****" />
+          <input id='nomeUsuario' label="Nome" text="Lucas" type="text"/>
+          <input id='relacaoFamiliar' label="Relação Familiar" text="Filho" type="text"/>
+          <input id='email' label="Email" text="oi@pucminas.br" type="email"/>
+          <input id='senha' label="Senha" type="password" text="*****" />
         </div>
         <div className="actions">
-          <Link to="../spending" className='link' onClick={verifyRegister}><ButtonBlack text="Cadastrar Familiar"/></Link>
-          <Link to="../spend" className='link'><ButtonWhite text="Spend"/></Link>
+          <button onClick={postUsuario}>Cadastrar Familiar</button>
         </div>
       </div>
     </>

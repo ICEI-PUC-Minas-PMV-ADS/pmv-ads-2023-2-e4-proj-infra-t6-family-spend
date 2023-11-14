@@ -28,7 +28,7 @@ namespace Family_Spend.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(Usuario usuarioNovo)
+        public async Task<IActionResult> Post([FromBody] Usuario usuarioNovo)
         {
             var familia = await _familiasService.GetAsync(usuarioNovo.FamiliaId);
             if (familia is null)

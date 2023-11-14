@@ -5,7 +5,7 @@ import ButtonBlack from '../components/ButtonBlack.jsx'
 import ButtonWhite from '../components/ButtonWhite.jsx'
 import Input from "../components/Input.jsx";
 import React, { useState, useEffect } from 'react';
-import axios from '../api/apiGasto';
+import axios from '../api/api.js';
 import useAxiosFunction from '../components/useAxiosFunction';
 
 export default function NewSpend() {

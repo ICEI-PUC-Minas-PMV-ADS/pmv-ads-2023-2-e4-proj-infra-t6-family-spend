@@ -6,7 +6,7 @@ import ButtonWhite from '../components/ButtonWhite.jsx'
 import Input from "../components/Input.jsx";
 import React, { useState, useEffect } from 'react';
 import useAxios from '../components/useAxios';
-import axios from '../api/apiGasto'
+import axios from '../api/api.js'
 import useAxiosFunction from '../components/useAxiosFunction.jsx';
 
 export default function Spend() {
@@ -45,6 +45,7 @@ export default function Spend() {
 
   return (
     <>
+    {console.log(error.response)}
       <Header>
         <Link to="../spending" className='link'>Inicio</Link>
         <Link to="../importar" className='link'>Importar</Link>

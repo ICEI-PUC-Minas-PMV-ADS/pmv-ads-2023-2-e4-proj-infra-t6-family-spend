@@ -26,7 +26,7 @@ namespace Family_Spend.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> Post(Gasto gastoNovo)
+        public async Task<IActionResult> Post([FromBody] Gasto gastoNovo)
         {
             await _gastosService.CreateAsync(gastoNovo);
             return CreatedAtAction(nameof(Get), new { id = gastoNovo.Id }, gastoNovo);
