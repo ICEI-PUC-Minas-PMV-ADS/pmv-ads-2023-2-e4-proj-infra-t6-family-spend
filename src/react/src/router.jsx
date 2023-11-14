@@ -5,6 +5,8 @@ import NewFamilyMember from './pages/NewFamilyMember';
 import NewSpend from './pages/NewSpend';
 import useAxios from './components/useAxios';
 import Spend from './pages/Spend';
+import Family from './pages/Family';
+import NewFamily from './pages/NewFamily';
 
 
 const router = createBrowserRouter([
@@ -31,6 +33,14 @@ const router = createBrowserRouter([
     {
       path: "/spend",
       element: <Spend/>,
+    },
+    {
+      path: "/family",
+      element: <Family/>,
+    },
+    {
+      path: "/newFamily",
+      element: <NewFamily/>,
     }
   ]
 );

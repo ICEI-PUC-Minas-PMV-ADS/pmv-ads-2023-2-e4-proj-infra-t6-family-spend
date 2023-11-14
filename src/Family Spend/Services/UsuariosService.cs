@@ -17,13 +17,14 @@ namespace Family_Spend.Services
         }
 
         public async Task<List<Usuario>> GetAsync() => await _usuariosCollection.Find(x => true).ToListAsync();
-        public async Task<List<Usuario>> BuscarUsuarioPorIdFamilia(string idFamilia) => await _usuariosCollection.Find(x => x.FamiliaId == idFamilia).ToListAsync();
+        //public async Task<List<Usuario>> BuscarUsuarioPorIdFamilia(string idFamilia) => await _usuariosCollection.Find(x => x.FamiliaId == idFamilia).ToListAsync();
+        public async Task<Usuario> BuscarUsuarioLogin(string nomeUsuario, string senha) => await _usuariosCollection.Find(x => x.NomeUsuario == nomeUsuario && x.Senha == senha).FirstOrDefaultAsync();
         public async Task<Usuario> GetAsync(string id) => await _usuariosCollection.Find(x => x.Id == id).FirstOrDefaultAsync();
         public async Task CreateAsync(Usuario usuarioNovo) => await _usuariosCollection.InsertOneAsync(usuarioNovo);
         public async Task UpdateAsync(string id, Usuario usuarioAtualizado) => await _usuariosCollection.ReplaceOneAsync(x => x.Id == id, usuarioAtualizado);
         public async Task RemoveAsync(string id) => await _usuariosCollection.DeleteOneAsync(x => x.Id == id);
 
-        public async Task<IEnumerable<Usuario>> GetAllAsync()
+       /* public async Task<IEnumerable<Usuario>> GetAllAsync()
         {
             var pipeline = new BsonDocument[]
             {
@@ -46,6 +47,6 @@ namespace Family_Spend.Services
             var results = await _usuariosCollection.Aggregate<Usuario>(pipeline).ToListAsync();
 
             return results;
-        }
+        }*/
     }
 }

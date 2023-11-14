@@ -30,15 +30,16 @@ namespace Family_Spend.Controllers
         [HttpPost]
         public async Task<IActionResult> Post([FromBody] Usuario usuarioNovo)
         {
-            var familia = await _familiasService.GetAsync(usuarioNovo.FamiliaId);
+/*            var familia = await _familiasService.GetAsync(usuarioNovo.FamiliaId);
             if (familia is null)
                 throw new Exception("Usuário precisa ser associado a um grupo familiar");
             else
-                usuarioNovo.NomeFamilia = familia.NomeFamilia;
+                usuarioNovo.NomeFamilia = familia.NomeFamilia;*/
 
             await _usuariosService.CreateAsync(usuarioNovo);
             return CreatedAtAction(nameof(Get), new { id = usuarioNovo.Id }, usuarioNovo);
         }
+
 
         [HttpPut("{id}")]
         public async Task<IActionResult> Update(string id, Usuario usuarioAtualizado)

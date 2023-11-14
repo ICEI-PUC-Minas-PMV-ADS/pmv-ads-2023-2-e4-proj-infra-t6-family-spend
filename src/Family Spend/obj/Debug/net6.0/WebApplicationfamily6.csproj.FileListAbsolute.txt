@@ -45,3 +45,12 @@ D:\GitHub\WebApplicationfamily6\obj\Debug\net6.0\refint\WebApplicationfamily6.dl
 D:\GitHub\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.pdb
 D:\GitHub\WebApplicationfamily6\obj\Debug\net6.0\WebApplicationfamily6.genruntimeconfig.cache
 D:\GitHub\WebApplicationfamily6\obj\Debug\net6.0\ref\WebApplicationfamily6.dll
+D:\GitHub\WebApplicationfamily6\bin\Debug\net6.0\AspNetCore.Identity.MongoDbCore.dll
+D:\GitHub\WebApplicationfamily6\bin\Debug\net6.0\MongoDbGenericRepository.dll
+D:\GitHub\WebApplicationfamily6\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\GitHub\WebApplicationfamily6\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\GitHub\WebApplicationfamily6\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\GitHub\WebApplicationfamily6\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\GitHub\WebApplicationfamily6\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\GitHub\WebApplicationfamily6\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\GitHub\WebApplicationfamily6\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
