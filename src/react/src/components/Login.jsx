@@ -3,8 +3,28 @@ import '../styles/login.css'
 import ButtonBlack from './ButtonBlack'
 import ButtonWhite from './ButtonWhite'
 import Input from './Input'
+import React, { useState, useEffect } from 'react';
+import axios from '../api/api.js';
+import useAxiosFunction from '../components/useAxiosFunction';
 
 export default function Login(props){
+
+  const [user, error, loading, axiosFetch] = useAxiosFunction();
+
+  const fazerLogin = () => {
+    axiosFetch(
+      {
+        axiosInstance: axios,
+        method: 'POST',
+        url: '/v1/authenticate/login',
+        data: {
+          email: document.getElementById('email').value,
+          password: document.getElementById('password').value,
+        }
+      }
+    )
+  }
+
   return(
     <> 
       <div className="container">
@@ -15,20 +35,16 @@ export default function Login(props){
             aqui
           </span>
         </p>
-
-        <Input
+        <input id='email'
           label="Email"
           type="text"
-          text="oi@pucminas.br"
         />
-
-        <Input
+        <input id='password'
           label="Senha"
           type="password"
-          text="*****"
         />
 
-        <Link to="spending" className='link'><ButtonBlack text="Login"/></Link>
+        <button className='link' onClick={fazerLogin}>Login</button>
 
         <div onClick={() => props.setComponent("forgotPassword")}>
           <ButtonWhite text="Esqueceu sua Senha?"/>
