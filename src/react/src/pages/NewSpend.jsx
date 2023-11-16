@@ -46,7 +46,7 @@ export default function NewSpend() {
   return (
     <>
       {console.log(error.response)}
-      <Header>
+      <Header useBar='true'>
         <Link to="../spend" className='link'>Gastos</Link>
       </Header>
 

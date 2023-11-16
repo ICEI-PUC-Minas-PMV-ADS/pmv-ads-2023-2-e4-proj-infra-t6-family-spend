@@ -45,7 +45,7 @@ export default function newFamilyMember() {
   return(
     <>
     {console.log(error.response)}
-      <Header>
+      <Header useBar='true'>
         <Link to="../NewSpend" className='link'>Novo Gasto</Link>
       </Header>
       <div className="section">

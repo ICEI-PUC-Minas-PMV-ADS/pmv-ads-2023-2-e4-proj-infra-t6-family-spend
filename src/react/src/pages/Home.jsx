@@ -11,7 +11,10 @@ export default function Home() {
   const [component, setComponent] = useState("");
   return (
     <>
-      <Header setComponent={setComponent} text="Cadastre-se"/>
+      <Header 
+        setComponent={setComponent} 
+        text="Cadastre-se" 
+        useBar={false} />
       <div className="main">
         <Open/>
         {(component == "signIn")?<

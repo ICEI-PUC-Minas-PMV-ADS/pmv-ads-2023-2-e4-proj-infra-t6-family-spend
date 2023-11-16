@@ -3,7 +3,6 @@ import Home from './pages/home';
 import Spending from './pages/Spending';
 import NewFamilyMember from './pages/NewFamilyMember';
 import NewSpend from './pages/NewSpend';
-import useAxios from './components/useAxios';
 import Spend from './pages/Spend';
 import Family from './pages/Family';
 import NewFamily from './pages/NewFamily';

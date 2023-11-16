@@ -46,7 +46,7 @@ export default function Spend() {
   return (
     <>
     {console.log(error.response)}
-      <Header>
+      <Header useBar='true' >
         <Link to="../spending" className='link'>Inicio</Link>
         <Link to="../importar" className='link'>Importar</Link>
       </Header>     <div className="section">

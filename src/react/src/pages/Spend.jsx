@@ -3,9 +3,7 @@ import Header from "../components/Header";
 import "../styles/spend.css";
 import ButtonBlack from '../components/ButtonBlack.jsx'
 import ButtonWhite from '../components/ButtonWhite.jsx'
-import Input from "../components/Input.jsx";
 import React, { useState, useEffect } from 'react';
-import useAxios from '../components/useAxios';
 import axios from '../api/api.js'
 import useAxiosFunction from '../components/useAxiosFunction.jsx';
 
@@ -45,11 +43,9 @@ export default function Spend() {
 
   return (
     <>
-    {console.log(error.response)}
-      <Header>
-        <Link to="../spending" className='link'>Inicio</Link>
-        <Link to="../importar" className='link'>Importar</Link>
-      </Header>     <div className="section">
+    {/* {console.log(error.response)} */}
+      <Header useBar={true}/>
+      <div className="section">
         <div className="head">
           <h2>Lista de Gastos</h2>
         </div>

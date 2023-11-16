@@ -30,7 +30,7 @@ const useAxiosFunction = () => {
         setResponse(list);
       }
       else{
-        console.log(res);
+        // console.log(res);
         setResponse(res.data);
       }
     } catch (err) {
