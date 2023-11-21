@@ -1,9 +1,7 @@
-import { Link } from 'react-router-dom'
 import Header from "../components/Header";
 import "../styles/spend.css";
 import ButtonBlack from '../components/ButtonBlack.jsx'
-import ButtonWhite from '../components/ButtonWhite.jsx'
-import React, { useState, useEffect } from 'react';
+import React, { useEffect } from 'react';
 import axios from '../api/api.js'
 import useAxiosFunction from '../components/useAxiosFunction.jsx';
 
@@ -71,7 +69,6 @@ export default function Spend() {
             <td>{total}</td>
           </tr>
         </table>
-          <Link to="../spending" className='link'><ButtonWhite text="Voltar" /></Link>
       </div>
 
       

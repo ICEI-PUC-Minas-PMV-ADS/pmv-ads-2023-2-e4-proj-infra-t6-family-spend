@@ -1,6 +1,6 @@
 import { StatusBar } from 'expo-status-bar';
 import Navbar from './src/components/Header'
-import Route from './src/routes/Index'
+import Route from './src/routes/index'
 
 export default function App() {
 
@@ -8,7 +8,6 @@ export default function App() {
     <>
       <Navbar/>
       <Route/>
-
       <StatusBar style="auto" />
     </>
   );

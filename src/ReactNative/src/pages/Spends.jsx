@@ -3,7 +3,7 @@ import Input from '../components/Input'
 import { Button } from "react-native-paper";
 import { Money } from 'phosphor-react-native';
 
-export default function SignInPage () {
+export default function SpendPage () {
   return (
     <ScrollView>
       <View style={styles.section}>
