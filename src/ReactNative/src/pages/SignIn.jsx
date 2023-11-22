@@ -37,7 +37,7 @@ export default function SignInPage () {
 
 const styles = StyleSheet.create({
   section: {
-    marginTop: 50,
+    marginTop: 40,
     marginBottom: 50,
     alignItems: 'center',
     justifyContent: 'center',

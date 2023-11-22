@@ -28,7 +28,7 @@ export default function HomePage() {
 
 const styles = StyleSheet.create({
   section: {
-    marginTop: 70,
+    marginTop: 110,
     alignItems: 'center',
     justifyContent: 'center',
   },
