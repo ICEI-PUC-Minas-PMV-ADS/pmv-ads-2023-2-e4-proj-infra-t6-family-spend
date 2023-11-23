@@ -26,7 +26,7 @@ export default function SpendPage () {
   }, [])
 
   const deletarGasto = (id) => {
-    debugger;
+    // debugger;
     axiosFetch(
       {
         axiosInstance: axios,
@@ -37,6 +37,7 @@ export default function SpendPage () {
         }
       }
     )
+    getData();
   }
 
   const z = 0;

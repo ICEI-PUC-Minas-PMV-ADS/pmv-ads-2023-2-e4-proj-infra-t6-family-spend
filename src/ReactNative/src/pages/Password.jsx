@@ -2,8 +2,17 @@ import { StyleSheet, Text, View } from "react-native";
 import Input from '../components/Input'
 import { Button } from "react-native-paper";
 import { Password } from 'phosphor-react-native';
+import React, { useEffect, useState } from 'react';
+import axios from '../api/api'
+import useAxiosFunction from '../components/UseAxiosFunction';
 
 export default function PasswordPage () {
+
+  const [mail, setMail] = useState('');
+
+
+
+
   return (
     <View style={styles.section}>
 
@@ -26,7 +35,7 @@ export default function PasswordPage () {
         Receba uma nova senha pelo e-mail
       </Text>
 
-      <Input label='E-mail' placeholder='oi@pucminas.com' />
+      <Input label='E-mail' placeholder='oi@pucminas.com' valor={mail} change={text => setMail(text)} />
 
       <Button 
         mode="contained"

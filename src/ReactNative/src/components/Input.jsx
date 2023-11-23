@@ -5,6 +5,8 @@ export default function Input(props) {
     <View style={styles.box}>
       <Text style={styles.label} >{props.label}</Text>
       <TextInput 
+        value={props.value}
+        onChangeText={props.change}
         style={styles.input}
         placeholder={props.placeholder}
       >

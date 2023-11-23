@@ -11,6 +11,10 @@ import useAxiosFunction from '../components/useAxiosFunction';
 export default function newFamilyMember() {
   const [usuarios, error, loading, axiosFetch] = useAxiosFunction();
 
+  const [user, setUser] = useState('');
+  const [mail, setMail] = useState('');
+  const [password, setPassword] = useState('');
+
   const getData = () => {
     axiosFetch({
       axiosInstance: axios,
