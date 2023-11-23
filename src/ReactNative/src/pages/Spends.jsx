@@ -1,7 +1,7 @@
 import { StyleSheet, Text, View, FlatList, SafeAreaView, Button  } from "react-native";
 import { IconButton } from 'react-native-paper';
 import React, { useEffect } from 'react';
-import axios from 'react-native-axios'
+import axios from '../api/api'
 import { Money, Trash } from 'phosphor-react-native';
 import { ScrollView } from 'react-native-virtualized-view'
 import useAxiosFunction from '../components/UseAxiosFunction';
@@ -42,49 +42,6 @@ export default function SpendPage () {
   const z = 0;
   const total = Object.values(gasto).reduce((t, {valor}) => t + valor, 0);
 
-
-
-  // const total = '30,00'
-
-  const DATA = [
-    {
-      id: 'bd7acbea-c1b1-46c2-aed5-3ad53abb28ba',
-      title: 'First Item',
-      gasto: 'Supermercado',
-      valor: '32,00',
-      responsavel: 'Lucas',
-    },
-    {
-      id: '3ac68afc-c605-48d3-a4f8-fbd91aa97f63',
-      title: 'Second Item',
-      gasto: 'Supermercado',
-      valor: '32,00',
-      responsavel: 'Lucas',
-    },
-    {
-      id: '58694a0f-3da1-471f-bd96-145571e29d72',
-      title: 'Third Item',
-      gasto: 'Supermercado',
-      valor: '32,00',
-      responsavel: 'Lucas',
-    },
-    {
-      id: '3ac68afc-c605-48d3-a4f8-fbd91aa93f63',
-      title: 'Second Item',
-      gasto: 'Supermercado',
-      valor: 'R$32,00',
-      responsavel: 'Lucas',
-    },
-    {
-      id: '58694a0f-3da1-471f-bd96-145552329d72',
-      title: 'Third Item',
-      gasto: 'Supermercado',
-      valor: '32,00',
-      responsavel: 'Lucas',
-    },
-  ];
-
-
   const Item = ({gasto, valor, responsavel, id}) => (
     <View style={styles.item}>
 
@@ -124,22 +81,11 @@ export default function SpendPage () {
 
           <View style={styles.conteudo}>
             <FlatList
-              data={DATA}
-              renderItem={({item}) => <Item gasto={item.gasto} responsavel={item.responsavel} valor={item.valor} id={item.id}/>}
+              data={gasto}
+              renderItem={({item}) => <Item gasto={item.nomeGasto} responsavel={item.nomeUsuario} valor={item.valor} id={item.id}/>}
               keyExtractor={item => item.id}
             />
 
-
-          {/* {gasto.map((item, index) => (
-            <View key={index}>
-              <Text>{item.nomeUsuario}</Text>
-              <Text>{item.nomeGasto}</Text>
-              <Text>{item.valor}</Text>
-              <View>
-                <Button id='btnDeletar' text='Deletar' click={() => deletarGasto(item.id)}></Button>
-              </View>
-            </View>
-          ))} */}
           </View>
 
         </View>
