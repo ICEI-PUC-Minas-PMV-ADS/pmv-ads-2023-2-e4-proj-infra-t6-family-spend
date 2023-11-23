@@ -1,14 +1,50 @@
-import { StyleSheet, Text, View, FlatList, SafeAreaView  } from "react-native";
+import { StyleSheet, Text, View, FlatList, SafeAreaView, Button  } from "react-native";
+import { IconButton } from 'react-native-paper';
 import React, { useEffect } from 'react';
 import axios from 'react-native-axios'
-import { Money } from 'phosphor-react-native';
+import { Money, Trash } from 'phosphor-react-native';
 import { ScrollView } from 'react-native-virtualized-view'
 import useAxiosFunction from '../components/UseAxiosFunction';
 
 
 export default function SpendPage () {
 
-  const total = '30,00'
+  const [gasto, error, loading, axiosFetch] = useAxiosFunction()
+
+  const getData = () => {
+    axiosFetch({
+      axiosInstance: axios,
+      method: 'GET',
+      url: '/gasto',
+    });
+  }
+
+  useEffect(() => {
+    getData();
+    console.log(gasto);
+    //eslint-disable-next-line
+  }, [])
+
+  const deletarGasto = (id) => {
+    debugger;
+    axiosFetch(
+      {
+        axiosInstance: axios,
+        method: 'DELETE',
+        url: `/gasto/${id}`,
+        data: {
+          id: id
+        }
+      }
+    )
+  }
+
+  const z = 0;
+  const total = Object.values(gasto).reduce((t, {valor}) => t + valor, 0);
+
+
+
+  // const total = '30,00'
 
   const DATA = [
     {
@@ -49,7 +85,7 @@ export default function SpendPage () {
   ];
 
 
-  const Item = ({gasto, valor, responsavel}) => (
+  const Item = ({gasto, valor, responsavel, id}) => (
     <View style={styles.item}>
 
       <View>
@@ -61,6 +97,13 @@ export default function SpendPage () {
         <Text style={styles.title}>Valor:</Text>
         <Text>R$ {valor}</Text>
       </View>
+
+      <IconButton
+        icon="trash-can"
+        iconColor='#c02948'
+        size={25}
+        onPress={() => deletarGasto(id)}
+      />
 
     </View>
   );
@@ -82,9 +125,21 @@ export default function SpendPage () {
           <View style={styles.conteudo}>
             <FlatList
               data={DATA}
-              renderItem={({item}) => <Item gasto={item.gasto} responsavel={item.responsavel} valor={item.valor} />}
+              renderItem={({item}) => <Item gasto={item.gasto} responsavel={item.responsavel} valor={item.valor} id={item.id}/>}
               keyExtractor={item => item.id}
             />
+
+
+          {/* {gasto.map((item, index) => (
+            <View key={index}>
+              <Text>{item.nomeUsuario}</Text>
+              <Text>{item.nomeGasto}</Text>
+              <Text>{item.valor}</Text>
+              <View>
+                <Button id='btnDeletar' text='Deletar' click={() => deletarGasto(item.id)}></Button>
+              </View>
+            </View>
+          ))} */}
           </View>
 
         </View>
@@ -119,7 +174,7 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
   },
   title: {
-    fontSize: 20,
+    fontSize: 18,
     fontWeight: '500',
   },
   value: {
