@@ -7,24 +7,19 @@ import Input from "../components/Input.jsx";
 import React, { useState, useEffect } from 'react';
 import axios from '../api/api.js';
 import useAxiosFunction from '../components/useAxiosFunction.jsx';
+import { useNavigate, useLocation } from 'react-router-dom';
 
-export default function newFamilyMember() {
+export default function newFamilyMember(props) {
+  const location = useLocation();
+  const navigate = useNavigate();
   const [familia, error, loading, axiosFetch] = useAxiosFunction();
+  //Dados família
+  const [idFamilia, setIdFamilia] = useState("");
+  const [nomeFamilia, setNomeFamilia] = useState("");
+  const [endereco, setEndereco] = useState("");
+  const [finalizado, setFinalizado] = useState(false);
 
-  const getData = () => {
-    axiosFetch({
-      axiosInstance: axios,
-      method: 'GET',
-      url: '/familia',
-    });
-  }
-
-  useEffect(() => {
-    getData();
-    //eslint-disable-next-line
-  }, [])
-
-  const postUsuario = () => {
+  const postFamilia = () => {
     axiosFetch(
       {
         axiosInstance: axios,
@@ -32,37 +27,56 @@ export default function newFamilyMember() {
         url: '/familia',
         data: {
           id: null,
-          familiaId: '653ed7469c412eb335296e15',
-          nomeUsuario: document.getElementById('nomeUsuario').value,
-          email: document.getElementById('email').value,
-          relacaoFamiliar: document.getElementById('relacaoFamiliar').value,
-          senha: document.getElementById('senha').value,
-          nomeFamilia: 'string',
+          nomeFamilia: nomeFamilia,
+          endereco: endereco,
         }
       }
     )
+    document.getElementById('cadastroFamilia').hidden = true;
+    document.getElementById('confirmaCadastro').hidden = false;
   }
+
+  let email = location.state.email;
+  let username = location.state.username;
+  let fullName = location.state.fullName;
+  let password = location.state.password;
+  let confirmPassword = location.state.confirmPassword;
+
+  let famId = familia.id;
+  let famNome = familia.nomeFamilia
 
   return(
     <>
-    {console.log(error.response)}
-      <Header useBar='true'>
-        <Link to="../NewSpend" className='link'>Novo Gasto</Link>
-      </Header>
-      <div className="section">
+      <div id='cadastroFamilia'>
         <div className="head">
-          <h2>Cadastrar novo Familiar</h2>
-          <p>Insira abaixo as informações do Familiar</p>
+          <h2>Cadastrar Nova Família</h2>
+          <p>Insira abaixo as informações da Família</p>
         </div>
+
         <div className="register">
-          <Input id='nomeUsuario' label="Nome" text="Lucas" type="text"/>
-          <Input id='relacaoFamiliar' label="Relação Familiar" text="Filho" type="text"/>
-          <Input id='email' label="Email" text="oi@pucminas.br" type="email"/>
-          <Input id='senha' label="Senha" type="password" text="*****" />
+          <Input 
+          id='nomeFamilia' 
+          label="Nome" 
+          text="Carvalho" 
+          type="text" 
+          onChange={(event) => setNomeFamilia(event.target.value)}
+          />
+          <Input 
+          id='endereco' 
+          label="Endereço" 
+          type="text" 
+          text="Rua tal, número tal" 
+          onChange={(event) => setEndereco(event.target.value)}
+          />
         </div>
         <div className="actions">
-          <ButtonBlack click={postUsuario} text='Cadastrar Familiar'></ButtonBlack>
+          <ButtonBlack click={() => postFamilia()} text='Cadastrar Família'></ButtonBlack>
         </div>
+      </div>
+
+      <div id='confirmaCadastro' hidden>
+        <h1>Família cadastrada com sucesso!</h1>
+        <button onClick={() => navigate('/finalizarCadastro', {replace: true, state:{email, username, fullName, password, confirmPassword, famId, famNome}})}>Finalizar o Cadastro de Usuário</button>
       </div>
     </>
   )

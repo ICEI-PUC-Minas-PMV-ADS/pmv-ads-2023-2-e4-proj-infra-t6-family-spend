@@ -15,7 +15,7 @@ export default function NewSpend() {
     axiosFetch({
       axiosInstance: axios,
       method: 'GET',
-      url: '/gasto',
+      url: '/gasto/get',
     });
   }
 
@@ -29,7 +29,7 @@ export default function NewSpend() {
       {
         axiosInstance: axios,
         method: 'POST',
-        url: '/gasto',
+        url: '/gasto/post',
         data: {
           id: null,
           familiaId: 'string',
@@ -62,7 +62,7 @@ export default function NewSpend() {
           <Input id='nomeUsuario' label="Nome do Responsável" type="text" text='Luiz'/>
         </div>
         <div className="actions">
-          <ButtonBlack click={handleSubmit} text='Gastar'></ButtonBlack>
+          <ButtonBlack click={() => handleSubmit} text='Gastar'></ButtonBlack>
         </div>
       </div>
     </>

@@ -19,7 +19,7 @@ export default function NewSpendPage () {
     axiosFetch({
       axiosInstance: axios,
       method: 'GET',
-      url: '/gasto',
+      url: '/gasto/get',
     });
   }
 
@@ -34,7 +34,7 @@ export default function NewSpendPage () {
       {
         axiosInstance: axios,
         method: 'POST',
-        url: '/gasto',
+        url: '/gasto/post',
         data: {
           id: null,
           familiaId: 'string',

@@ -12,6 +12,9 @@ namespace WebApplicationfamily6.Dtos
         [Required]
         public string FullName { get; set; } = string.Empty;
 
+        [Required]
+        public string FamiliaId { get; set; } = string.Empty;
+
         [Required, DataType(DataType.Password)]
         public string Password { get; set; } = string.Empty;
 

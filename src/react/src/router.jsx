@@ -6,7 +6,7 @@ import NewSpend from './pages/NewSpend';
 import Spend from './pages/Spend';
 import Family from './pages/Family';
 import NewFamily from './pages/NewFamily';
-
+import FinalizarCadastro from './pages/FinalizarCadastro';
 
 const router = createBrowserRouter([
     {
@@ -40,6 +40,10 @@ const router = createBrowserRouter([
     {
       path: "/newFamily",
       element: <NewFamily/>,
+    },
+    {
+      path: "/finalizarCadastro",
+      element: <FinalizarCadastro/>,
     }
   ]
 );

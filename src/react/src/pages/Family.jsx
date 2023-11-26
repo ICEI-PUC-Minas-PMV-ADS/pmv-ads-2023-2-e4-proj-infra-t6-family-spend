@@ -8,36 +8,58 @@ import React, { useState, useEffect } from 'react';
 import useAxios from '../components/useAxios.jsx';
 import axios from '../api/api.js'
 import useAxiosFunction from '../components/useAxiosFunction.jsx';
+import { useNavigate, useLocation } from 'react-router-dom';
 
-export default function Spend() {
+export default function Family(props) {
 
-  const [familia, error, loading, axiosFetch] = useAxiosFunction()
+  const navigate = useNavigate();
+  const location = useLocation();
 
-  const getData = () => {
-    axiosFetch({
-      axiosInstance: axios,
-      method: 'GET',
-      url: '/familia',
-    });
-  }
+  const [familia, errorFamilia, loadingFamilia, axiosFetchFamilia] = useAxiosFunction()
+  const [gasto, errorGasto, loadingGasto, axiosFetchGasto] = useAxiosFunction()
+  const [user, errorUser, loadingUser, axiosFetchUser] = useAxiosFunction()
+
+
+  let familiaId = location.state.familiaIds;
 
   useEffect(() => {
     getData();
     //eslint-disable-next-line
   }, [])
 
-  const deletarGasto = (id) => {
-    debugger;
-    axiosFetch(
+  const deletarGasto = (familiaId) => {
+    axiosFetchFamilia(
       {
         axiosInstance: axios,
         method: 'DELETE',
-        url: `/familia/${id}`,
+        url: `/familia/${familiaId}`,
         data: {
           id: id
         }
       }
     )
+  }
+
+  const buscarUsuarios = (familiaId) => {
+    axiosFetchUser({
+      axiosInstance: axios,
+      method: 'GET',
+      url: `/Auth/GetFamilia/${familiaId}`,
+      data:{
+        familiaId: familiaId
+      }
+    })
+  }
+
+  const buscarGastos = (familiaId) => {
+    axiosFetchGasto({
+      axiosInstance: axios,
+      method: 'GET',
+      url: `/gasto/GetFamilia/${familiaId}`,
+      data:{
+        familiaId: familiaId
+      }
+    })
   }
 
   const z = 0;
@@ -54,14 +76,16 @@ export default function Spend() {
           <h2>Lista de Gastos</h2>
         </div>
         <div className="register">
-          <div>{familia.map((item, index) => (
+          <div>{user.map((item, index) => (
             <div key={index}>
-              <span>Gasto: {item.nomeGasto}</span>
-              <br></br>
-              <span>Valor: {item.valor}</span>
-              <br />
-              <span>Responsável: {item.nomeUsuario}</span>
-              <button id='btnDeletar' onClick={() => deletarGasto(item.id)}>DELETAR</button>
+              <span>{item.FullName}</span>
+              <div>{gas.map((itemGasto, indexGasto) =>(
+                  <div key = {indexGasto}>
+                    
+                  </div>
+              ))
+              }
+              </div>
             </div>
           ))}
           </div>

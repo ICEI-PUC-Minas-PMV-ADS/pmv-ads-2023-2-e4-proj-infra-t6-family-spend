@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace Family_Spend.Controllers
 {
     [ApiController]
-    [Route("api/[controller]")]
+    [Route("api/[controller]/[action]")]
     public class GastoController : ControllerBase
     {
         private readonly IGastosService _gastosService;
@@ -22,6 +22,13 @@ namespace Family_Spend.Controllers
         public async Task<ActionResult<Gasto>> Get(string id)
         {
             var gasto = await _gastosService.GetAsync(id);
+            return gasto is null ? NotFound() : Ok(gasto);
+        }
+
+        [HttpGet("{familiaId}")]
+        public async Task<ActionResult<List<Gasto>>> GetFamilia(string familiaId)
+        {
+            var gasto = await _gastosService.GetAsyncFamilia(familiaId);
             return gasto is null ? NotFound() : Ok(gasto);
         }
 

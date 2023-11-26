@@ -21,7 +21,7 @@ export default function SignInPage () {
       {
         axiosInstance: axios,
         method: 'POST',
-        url: '/v1/authenticate/register',
+        url: '/Auth/Register/register',
         data: {
           email: {mail},
           username: {userName},

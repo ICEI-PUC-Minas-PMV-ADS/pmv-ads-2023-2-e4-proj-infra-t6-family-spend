@@ -18,7 +18,7 @@ export default function LoginPage (props) {
       {
         axiosInstance: axios,
         method: 'POST',
-        url: '/v1/authenticate/login',
+        url: '/Auth/login/login',
         data: {
           email: {mail},
           password: {password},

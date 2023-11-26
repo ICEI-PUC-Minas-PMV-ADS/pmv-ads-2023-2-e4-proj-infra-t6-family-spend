@@ -13,7 +13,7 @@ export default function Spend() {
     axiosFetch({
       axiosInstance: axios,
       method: 'GET',
-      url: '/gasto',
+      url: '/gasto/Get',
     });
   }
 
@@ -28,7 +28,7 @@ export default function Spend() {
       {
         axiosInstance: axios,
         method: 'DELETE',
-        url: `/gasto/${id}`,
+        url: `/gasto/Delete/${id}`,
         data: {
           id: id
         }

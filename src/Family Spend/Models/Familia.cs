@@ -10,10 +10,10 @@ namespace Family_Spend.Models
         [BsonRepresentation(BsonType.ObjectId)]
         public string? Id { get; set; }
 
-        [BsonElement("Nome")]
+        [BsonElement("nomeFamilia")]
         public string NomeFamilia { get; set; } = null;
 
-        [BsonElement("Endereco")]
+        [BsonElement("endereco")]
         public string Endereco { get; set; }
     }
 }

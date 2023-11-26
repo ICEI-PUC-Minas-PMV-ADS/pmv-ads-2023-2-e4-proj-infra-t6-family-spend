@@ -1,4 +1,5 @@
 ﻿using Family_Spend.Models;
+using Family_Spend.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
@@ -14,17 +15,19 @@ using WebApplicationfamily6.Models;
 
 namespace WebApplicationfamily6.Controllers
 {
-    [Route("api/v1/authenticate")]
+    [Route("api/[controller]/[action]")]
     [ApiController]
     public class AuthController : ControllerBase
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly RoleManager<ApplicationRole> _roleManager;
+        private readonly IUsuariosService _usuarioService;
 
-        public AuthController(UserManager<ApplicationUser> userManager, RoleManager<ApplicationRole> roleManager)
+        public AuthController(UserManager<ApplicationUser> userManager, RoleManager<ApplicationRole> roleManager, IUsuariosService usuarioService)
         {
             _userManager = userManager;
             _roleManager = roleManager;
+            _usuarioService = usuarioService;
         }
 
         [HttpPost]
@@ -58,11 +61,12 @@ namespace WebApplicationfamily6.Controllers
                 userExists = new ApplicationUser
                 {
                     FullName = request.FullName,
+                    FamiliaId = request.FamiliaId,
                     Email = request.Email,
                     ConcurrencyStamp = Guid.NewGuid().ToString(),
                     UserName = request.Email,
-
                 };
+
                 var createUserResult = await _userManager.CreateAsync(userExists, request.Password);
                 if(!createUserResult.Succeeded) return new RegisterResponse { Message = $"Create user failed {createUserResult?.Errors?.First()?.Description}", Success = false };
                 //user is created...
@@ -74,7 +78,7 @@ namespace WebApplicationfamily6.Controllers
                 return new RegisterResponse
                 {
                     Success = true,
-                    Message = "User registered successfully"
+                    Message = "Usuário registrado com sucesso"
                 };
             }
             catch (Exception ex)
@@ -138,6 +142,13 @@ namespace WebApplicationfamily6.Controllers
                 Console.WriteLine(ex.Message);
                 return new LoginResponse { Success = false, Message = ex.Message };
             }
+        }
+
+        [HttpGet("{familiaId}")]
+        public async Task<ActionResult<List<Gasto>>> GetFamilia(string familiaId)
+        {
+            var gasto = await _usuarioService.BuscarUsuariosPorIdFamilia(familiaId);
+            return gasto is null ? NotFound() : Ok(gasto);
         }
     }
 }

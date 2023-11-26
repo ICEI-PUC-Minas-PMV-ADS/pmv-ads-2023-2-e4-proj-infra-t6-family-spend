@@ -8,6 +8,7 @@ namespace Family_Spend.Services
     {
         Task<List<Gasto>> GetAsync();
         Task<Gasto> GetAsync(string id);
+        Task<List<Gasto>> GetAsyncFamilia(string familiaId);
         Task CreateAsync(Gasto gastoNovo);
         Task UpdateAsync(string id, Gasto gastoAtualizado);
         Task RemoveAsync(string id);

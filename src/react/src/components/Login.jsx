@@ -11,12 +11,20 @@ export default function Login(props){
 
   const [user, error, loading, axiosFetch] = useAxiosFunction();
 
+  const getUser = () => {
+    axiosFetch({
+      axiosInstance: axios,
+      method: 'GET',
+      url: '/gasto/get',
+    });
+  }
+
   const fazerLogin = () => {
     axiosFetch(
       {
         axiosInstance: axios,
         method: 'POST',
-        url: '/v1/authenticate/login',
+        url: '/Auth/Login/login',
         data: {
           email: document.getElementById('email').value,
           password: document.getElementById('password').value,
