@@ -8,7 +8,7 @@ import useAxiosFunction from '../components/useAxiosFunction.jsx';
 import NewFamily from '../pages/NewFamily.jsx';
 import { useNavigate } from 'react-router-dom';
 
-export default function SignIn() {
+export default function SignIn(props) {
   const navigate = useNavigate();
   const [user, error, loading, axiosFetch] = useAxiosFunction();
   const[email, setEmail] = useState("");
@@ -62,6 +62,12 @@ export default function SignIn() {
       <div className="container">
 
         <h1>Registrar Usuário</h1>
+
+        <p>Já possui uma conta? Faça login  
+          <span onClick={() => props.setComponent("logIn")}>
+            aqui
+          </span>
+        </p>
 
         <Input 
           label="Email"

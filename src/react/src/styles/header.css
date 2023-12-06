@@ -1,13 +1,14 @@
 #header{
   width: 100%;
-	z-index: 0;
+	z-index: 7;
   height: 12vh;
   display: flex;
   color: #f3f3f3;
   align-items: center;
   background-image: linear-gradient(90deg, #333,#267024);
   justify-content: space-around;
-
+	position: sticky;
+	top: 0;
 }
 
 .hamburguer{
@@ -17,18 +18,21 @@
 }
 
 .center {
-	top: 6%;
+	top: 16%;
 	left: 10%;
-	position: absolute;
+	z-index: 7;
+	position: relative;
 	transform: translate(-50%, -50%);
 }
 
 #menu {
+	top: -10px;
 	width: 50px;
 	height: 50px;
 	display: flex;
 	transition: 1s;
 	cursor: pointer;
+	position: absolute;
 	align-items: center;
 	flex-direction: column;
 	justify-content: center;
@@ -39,6 +43,7 @@
 	height: 5px;
 	border-radius: 4px;
 	position: absolute;
+	z-index: 15;
 	background-color: #fff;
 	box-shadow: 0px 0px 5px #555;
 }
@@ -56,7 +61,7 @@
 }
 
 #header .open{
-	transform: translateX(-80px);
+	transform: translateX(-9vw);
 	transition: 1s;
 }
 
@@ -167,10 +172,12 @@
 
 .options{
 	width: 30vw;
+	margin: 20px 0;
 	height: 100vh;
 	display: flex;
 	transition: 1s;
 	padding: 5rem 0;
+	position: absolute;
 	align-items: center;
 	flex-direction: column;
 	background-color: #7c7c7c;
@@ -198,4 +205,31 @@
 	transition: .3s;
 	color: #7cb37a;
 	transform: translateX(10px);
+}
+
+@media (max-width: 1000px) {
+
+		#header .open{
+		transform: translateX(-6vw);
+		transition: 1s;
+	}
+
+}
+
+@media (max-width: 700px) {
+
+		#header .open{
+		transform: translateX(-4vw);
+		transition: 1s;
+	}
+
+}
+
+@media (max-width: 570px) {
+
+		#header .open{
+		transform: translateX(-2vw);
+		transition: 1s;
+	}
+
 }
