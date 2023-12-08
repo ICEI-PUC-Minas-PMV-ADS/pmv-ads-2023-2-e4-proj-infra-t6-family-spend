@@ -29,7 +29,7 @@ export default function Login(props){
     }
     else{
       alert(user.message)
-      <Link to="../Spend"/>
+      
     }
   }
 
