@@ -16,26 +16,27 @@ export default function SignIn(props) {
   const[fullName, setFullName] = useState("");
   const[password, setPassword] = useState("");
   const[confirmPassword, setConfirmPassword] = useState("");
+  const[idFamilia, setIdFamilia] = useState("");
+  let [ code, setCode] = useState(<div></div>);
 
   const CadastrarFamilia = (dadoUsuario) => {
     setDadosUsuario(dadoUsuario);
     NewFamily
   }
 
-
-  const confirmar = (param) => {
-    debugger
-    if(param == 'con'){
-      document.getElementById("confirmar").hidden = false;
-      document.getElementById("botaoConfirmar").hidden = true;
-    }
-    else if(param == 'sim'){
-      document.getElementById("confirmarSim").hidden = false;
-      document.getElementById("confirmarNao").hidden = true;
-    }
-    else{
-      document.getElementById("confirmarNao").hidden = false;
-      document.getElementById("confirmarSim").hidden = true;
+  function finishLogin (type) {
+    if (type == 'confirm') {
+      setCode(
+        <div id='confirmar'>
+          <p>Sua família já está cadastrada no nosso sistema?</p>
+          <ButtonBlack className='link' id='botaoSim' click={() => finishLogin('idFamily')} text='Sim'></ButtonBlack>
+          <ButtonBlack className='link' id='botaoNao' click={() => navigate('/NewFamily', {replace: true, state:{email, username, fullName, password, confirmPassword}})} text='Não'></ButtonBlack>
+        </div>
+      );
+    }else if(type == 'idFamily'){
+      setCode(
+      )
+      document.getElementById('confirmarSim').hidden = false;
     }
   }
 
@@ -47,15 +48,22 @@ export default function SignIn(props) {
         method: 'POST',
         url: '/Auth/Register/register',
         data: {
-          familiaId: document.getElementById('idFamilia').value,
-          email: document.getElementById('email').value,
-          username: document.getElementById('username').value,
-          fullName: document.getElementById('fullName').value,
-          password: document.getElementById('password').value,
-          confirmPassword: document.getElementById('confirmPassword').value,
+          familiaId: idFamilia,
+          email: email,
+          username: username,
+          fullName: fullName,
+          password: password,
+          confirmPassword: confirmPassword
         }
       }
     )
+    if(user.success !== true){
+      alert("Problema com o Cadastro")
+    }
+    else{
+      alert(user.message)
+      props.setComponent('Login')
+    }
   }
 
   let dadoUsuario;
@@ -107,26 +115,21 @@ export default function SignIn(props) {
           onChange={(event) => setConfirmPassword(event.target.value)}
         />
 
-        <div id='confirmar' hidden>
-            <p>Sua família já está cadastrada no nosso sistema?</p>
-            <ButtonBlack className='link' id='botaoSim' click={() => confirmar('sim')} text='Sim'></ButtonBlack>
-            <ButtonBlack className='link' id='botaoNao' click={() => confirmar('nao')} text='Não'></ButtonBlack>
-        </div>
-
         <div id='confirmarSim' hidden>
           <p>Digite o número de identificação da sua família (peça a um familiar)</p>
             <Input 
               label="ID da Família"
               type="text"
               id='idFamilia'
+              onChange={(event) => setIdFamilia(event.target.value)}
             />
-            <button className='link' id='botaoCadastro' onClick={registrarUsuario} text='Registrar Usuário'></button>
+            <ButtonBlack className='link' id='botaoCadastro' click={registrarUsuario} text='Registrar Usuário'></ButtonBlack>
         </div>
 
-        <div id='confirmarNao' hidden>
-          <button onClick={() => navigate('/NewFamily', {replace: true, state:{email, username, fullName, password, confirmPassword}})}>Cadastrar sua Família</button>
-        </div>
-        <button className='link' id='botaoConfirmar' onClick={() => confirmar('con')} text='Registrar Usuário'></button>
+        <ButtonBlack click={() => finishLogin('confirm')} text='Cadastrar'></ButtonBlack>
+
+        {code}
+
       </div>
     </>
   )

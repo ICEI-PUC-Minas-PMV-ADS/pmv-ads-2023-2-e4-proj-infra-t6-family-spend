@@ -1,10 +1,10 @@
-import { useState } from 'react'
-import ForgotPassword from '../components/ForgotPassword'
-import Open from '../components/Open'
-import SignIn from '../components/SignIn'
-import Login from '../components/login'
-import '../styles/home.css'
-import Header from '../components/Header'
+import { useState } from 'react';
+import ForgotPassword from '../components/ForgotPassword';
+import Open from '../components/Open';
+import SignIn from '../components/SignIn';
+import Login from '../components/Login';
+import '../styles/home.css';
+import Header from '../components/Header';
 
 
 export default function Home() {

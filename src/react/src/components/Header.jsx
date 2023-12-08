@@ -3,9 +3,6 @@ import { Link } from 'react-router-dom'
 import { FaHouseUser, FaMoneyBill,FaUserGroup } from "react-icons/fa6";
 import { useState, useEffect } from 'react';
 
-
-
-
 export default function Header (props) {
 
   let [ code, useCode] = useState(<div></div>);

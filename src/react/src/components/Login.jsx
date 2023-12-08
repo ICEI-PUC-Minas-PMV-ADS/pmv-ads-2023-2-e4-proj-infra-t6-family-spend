@@ -1,15 +1,16 @@
-import { Link } from 'react-router-dom'
 import '../styles/login.css'
 import ButtonBlack from './ButtonBlack'
 import ButtonWhite from './ButtonWhite'
 import Input from './Input'
 import React, { useState, useEffect } from 'react';
 import axios from '../api/api.js';
+import { useNavigate  } from "react-router-dom";
 import useAxiosFunction from '../components/useAxiosFunction';
 
 export default function Login(props){
 
   const [user, error, loading, axiosFetch] = useAxiosFunction();
+  const navigate = useNavigate();
 
   const fazerLogin = () => {
     axiosFetch(
@@ -29,7 +30,7 @@ export default function Login(props){
     }
     else{
       alert(user.message)
-      
+      navigate("../Spend");
     }
   }
 
@@ -54,7 +55,8 @@ export default function Login(props){
           id='password'
         />
 
-        <ButtonBlack click={fazerLogin} text='Login'></ButtonBlack>
+        <ButtonBlack click={fazerLogin} text='Login'>          
+        </ButtonBlack>
 
         <div onClick={() => props.setComponent("forgotPassword")}>
           <ButtonWhite text="Esqueceu sua Senha?"/>
