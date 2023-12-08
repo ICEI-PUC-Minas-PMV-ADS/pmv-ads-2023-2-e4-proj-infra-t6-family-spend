@@ -39,10 +39,10 @@ export default function NewSpendPage () {
           id: null,
           familiaId: 'string',
           usuarioId: 'string',
-          nomeGasto: {title},
-          valor: {value},
+          nomeGasto: "teste",
+          valor: 90,
           data: "2023-10-30",
-          nomeUsuario: {user},
+          nomeUsuario: 'sdadsa',
         }
       }
     )

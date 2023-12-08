@@ -24,9 +24,10 @@ export default function SignIn(props) {
 
 
   const confirmar = (param) => {
+    debugger
     if(param == 'con'){
       document.getElementById("confirmar").hidden = false;
-      document.getElementById("botaoConfirmar").hidden = true
+      document.getElementById("botaoConfirmar").hidden = true;
     }
     else if(param == 'sim'){
       document.getElementById("confirmarSim").hidden = false;
@@ -39,12 +40,14 @@ export default function SignIn(props) {
   }
 
   const registrarUsuario = () => {
+    debugger;
     axiosFetch(
       {
         axiosInstance: axios,
         method: 'POST',
         url: '/Auth/Register/register',
         data: {
+          familiaId: document.getElementById('idFamilia').value,
           email: document.getElementById('email').value,
           username: document.getElementById('username').value,
           fullName: document.getElementById('fullName').value,
@@ -117,12 +120,13 @@ export default function SignIn(props) {
               type="text"
               id='idFamilia'
             />
+            <button className='link' id='botaoCadastro' onClick={registrarUsuario} text='Registrar Usuário'></button>
         </div>
 
         <div id='confirmarNao' hidden>
           <button onClick={() => navigate('/NewFamily', {replace: true, state:{email, username, fullName, password, confirmPassword}})}>Cadastrar sua Família</button>
         </div>
-        <ButtonBlack className='link' id='botaoConfirmar' click={() => confirmar('con')} text='Registrar Usuário'></ButtonBlack>
+        <button className='link' id='botaoConfirmar' onClick={() => confirmar('con')} text='Registrar Usuário'></button>
       </div>
     </>
   )

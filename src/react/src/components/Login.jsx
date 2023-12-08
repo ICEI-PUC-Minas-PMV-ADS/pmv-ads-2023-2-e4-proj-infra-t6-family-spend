@@ -11,14 +11,6 @@ export default function Login(props){
 
   const [user, error, loading, axiosFetch] = useAxiosFunction();
 
-  const getUser = () => {
-    axiosFetch({
-      axiosInstance: axios,
-      method: 'GET',
-      url: '/gasto/get',
-    });
-  }
-
   const fazerLogin = () => {
     axiosFetch(
       {
@@ -31,6 +23,14 @@ export default function Login(props){
         }
       }
     )
+    debugger;
+    if(user.success !== true){
+      alert("E-mail ou Senha Incorretos")
+    }
+    else{
+      alert(user.message)
+      <Link to="../Spend"/>
+    }
   }
 
   return(
@@ -59,7 +59,6 @@ export default function Login(props){
         <div onClick={() => props.setComponent("forgotPassword")}>
           <ButtonWhite text="Esqueceu sua Senha?"/>
         </div>
-        
       </div>
     </>
   )

@@ -15,7 +15,7 @@ export default function SpendPage () {
     axiosFetch({
       axiosInstance: axios,
       method: 'GET',
-      url: '/gasto',
+      url: '/gasto/get',
     });
   }
 
@@ -31,7 +31,7 @@ export default function SpendPage () {
       {
         axiosInstance: axios,
         method: 'DELETE',
-        url: `/gasto/${id}`,
+        url: `/gasto/delete/${id}`,
         data: {
           id: id
         }

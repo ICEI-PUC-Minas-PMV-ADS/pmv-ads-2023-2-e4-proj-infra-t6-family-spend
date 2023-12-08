@@ -42,7 +42,7 @@ export default function FinalizarCadastro(props) {
       {
         axiosInstance: axios,
         method: 'POST',
-        url: '/v1/authenticate/register',
+        url: '/Auth/Register/register',
         data: {
           id:null,
           email: emails,
